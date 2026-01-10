@@ -1,0 +1,26 @@
+baseURL = 'https://yourdomain.com/'
+languageCode = 'en-us'
+title = 'Smart Travel & Style'
+theme = 'PaperMod'
+
+[params]
+    env = "production"
+    title = "Smart Travel & Style"
+    description = "Your guide to Jumia deals and Travelstart adventures."
+    author = "Admin"
+
+    [params.homeInfoParams]
+        Title = "Welcome to Smart Travel & Style 👋"
+        Content = "We help you find the best retail deals and cheapest flights."
+
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name = "Blog"
+        url = "/posts/"
+        weight = 10
+    [[menu.main]]
+        identifier = "about"
+        name = "About Us"
+        url = "/about/"
+        weight = 20
