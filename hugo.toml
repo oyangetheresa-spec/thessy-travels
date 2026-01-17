@@ -12,14 +12,24 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
         Title = "Welcome to Smart Travel & Style 👋"
         Content = "We help you find the best retail deals and cheapest flights."
 
-[menu]
-    [[menu.main]]
-        identifier = "posts"
-        name = "Blog"
-        url = "/posts/"
-        weight = 10
-    [[menu.main]]
-        identifier = "about"
-        name = "About Us"
-        url = "/about/"
-        weight = 20
+   [menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Gear Reviews"      # Great for your Jumia affiliate links
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
+    name = "Travel Tips"       # Guides on how to travel better/cheaper
+    url = "/tips/"
+    weight = 30
+  [[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 40
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
