@@ -1,4 +1,4 @@
-baseURL = 'https://yourdomain.com/'
+baseURL = 'https://thessy-travels.pages.dev/'
 languageCode = 'en-us'
 title = 'Smart Travel & Style'
 theme = ["github.com/adityatelange/hugo-PaperMod"]
