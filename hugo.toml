@@ -1,7 +1,7 @@
 baseURL = 'https://yourdomain.com/'
 languageCode = 'en-us'
 title = 'Smart Travel & Style'
-theme = 'PaperMod'
+theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
     env = "production"
