@@ -4,35 +4,40 @@ title = 'The Technical Host'
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
+    # --- 1. Global Site Identity ---
     env = "production"
     title = "The Technical Host"
-    description = "Engineering high-yield guest experiences. Automation, software, and systems for the modern host."
-    author = "Your Name" # CHANGE THIS to your name for SEO authority
+    description = "Engineering high-yield guest experiences. Systems, software, and automation for the modern host."
+    author = "Admin"
     defaultTheme = "auto"
-    ShowCodeCopyButtons = true # Great for when you share code/automation scripts
-    ShowReadingTime = true     # Helps users know how long a guide is
-    ShowBreadCrumbs = true     # Improves Google SEO ranking
 
-    # This makes your site name look professional in the navbar
+    # --- 2. THE UNFAIR ADVANTAGES (The Features) ---
+    ShowCodeCopyButtons = true   # Advantage: Users can copy your tech scripts easily
+    ShowReadingTime = true       # Advantage: Respects the busy host's time
+    ShowBreadCrumbs = true       # Advantage: Massive SEO boost for Google rankings
+    ShowShareButtons = true      # Advantage: Helps your tools go viral in host groups
+    ShowPostNavLinks = true      # Advantage: Keeps people clicking through your site
+
+    # --- 3. Branding & Social ---
     [params.label]
         text = "The Technical Host"
-        icon = "/apple-touch-icon.png" # We will add a favicon later
 
-    [params.homeInfoParams]
-        Title = "Systemize Your Stays 🚀"
-        Content = "Stop trading time for bookings. I help hosts automate their operations, maximize yield, and build direct-booking empires using code & software."
-
-    # Clean Social Icons (Using the most stable syntax)
     socialIcons = [
         { name = "github", url = "https://github.com/oyangetheresa-spec" },
         { name = "linkedin", url = "https://linkedin.com/" }
     ]
 
-    # Analytics - Cloudflare's built-in analytics works without this, 
-    # but having this block ready is good practice.
-    [params.analytics.google]
-        SiteVerificationTag = ""
+    # --- 4. The Hero Section ---
+    [params.homeInfoParams]
+        Title = "Systemize Your Stays 🚀"
+        Content = "Stop trading time for bookings. I help hosts automate operations, maximize yield, and build direct-booking empires using code & software."
 
+# --- 5. THE SEARCH ENGINE ADVANTAGE ---
+# This generates the JSON file needed for your lightning-fast search bar
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+# --- 6. The Professional Navigation ---
 [menu]
   [[menu.main]]
     name = "Home"
@@ -40,17 +45,17 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     weight = 10
 
   [[menu.main]]
-    name = "Search"         # ADDED: Essential for a "Technical" brand
+    name = "Search"
     url = "/search/"
     weight = 15
 
   [[menu.main]]
-    name = "Host Software"
+    name = "Software"
     url = "/software/"
     weight = 20
 
   [[menu.main]]
-    name = "Smart Home Tech"
+    name = "Smart Tech"
     url = "/smart-tech/"
     weight = 30
 
@@ -58,7 +63,3 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     name = "Calculators"
     url = "/tools/"
     weight = 40
-
-# This section enables the Search function and SEO features
-[outputs]
-    home = ["HTML", "RSS", "JSON"]
