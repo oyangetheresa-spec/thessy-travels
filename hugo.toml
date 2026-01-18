@@ -22,10 +22,11 @@ buildFuture = false
         I help hosts automate their operations, maximize yield, and build direct-booking empires using code & software.
         """
 
-    [params.socialIcons]
-        github = "https://github.com/yourusername"
-        linkedin = "https://linkedin.com/in/yourusername"
-        # twitter = "https://twitter.com/yourusername"
+       [params.socialIcons]
+        - name: "github"
+          url: "https://github.com/oyangetheresa-spec"
+        - name: "linkedin"
+          url: "https://linkedin.com/"
 
     # Social Media Card previews (When you share links on WhatsApp/LinkedIn)
     [params.assets]
