@@ -1,36 +1,37 @@
-baseURL = 'https://the-technical-host.pages.dev/' # You will need to update your Cloudflare project name later
+baseURL = 'https://thessy-travels.pages.dev/'
 languageCode = 'en-us'
 title = 'The Technical Host'
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
-enableRobotsTXT = true     # Helps Google index your site properly
-buildDrafts = false
-buildFuture = false
-
 [params]
     env = "production"
     title = "The Technical Host"
-    description = "Engineering better guest experiences. Systems, software, and automation for the modern Airbnb host."
-    author = "Your Name"   # Put your real name here to build 'Expert' authority
-    defaultTheme = "auto"  # Allows Dark Mode (very "tech" friendly)
+    description = "Engineering high-yield guest experiences. Automation, software, and systems for the modern host."
+    author = "Your Name" # CHANGE THIS to your name for SEO authority
+    defaultTheme = "auto"
+    ShowCodeCopyButtons = true # Great for when you share code/automation scripts
+    ShowReadingTime = true     # Helps users know how long a guide is
+    ShowBreadCrumbs = true     # Improves Google SEO ranking
 
-    # This section controls the big banner on your homepage
+    # This makes your site name look professional in the navbar
+    [params.label]
+        text = "The Technical Host"
+        icon = "/apple-touch-icon.png" # We will add a favicon later
+
     [params.homeInfoParams]
         Title = "Systemize Your Stays 🚀"
-        Content = """
-        Stop trading time for bookings. 
-        I help hosts automate their operations, maximize yield, and build direct-booking empires using code & software.
-        """
+        Content = "Stop trading time for bookings. I help hosts automate their operations, maximize yield, and build direct-booking empires using code & software."
 
-       [params.socialIcons]
-        - name: "github"
-          url: "https://github.com/oyangetheresa-spec"
-        - name: "linkedin"
-          url: "https://linkedin.com/"
+    # Clean Social Icons (Using the most stable syntax)
+    socialIcons = [
+        { name = "github", url = "https://github.com/oyangetheresa-spec" },
+        { name = "linkedin", url = "https://linkedin.com/" }
+    ]
 
-    # Social Media Card previews (When you share links on WhatsApp/LinkedIn)
-    [params.assets]
-        disableHLJS = false # Keeps syntax highlighting for your code blocks
+    # Analytics - Cloudflare's built-in analytics works without this, 
+    # but having this block ready is good practice.
+    [params.analytics.google]
+        SiteVerificationTag = ""
 
 [menu]
   [[menu.main]]
@@ -39,25 +40,25 @@ buildFuture = false
     weight = 10
 
   [[menu.main]]
-    name = "Host Software"       # Replaces 'Gear Reviews'. High-ticket software reviews (Lodgify, etc.)
+    name = "Search"         # ADDED: Essential for a "Technical" brand
+    url = "/search/"
+    weight = 15
+
+  [[menu.main]]
+    name = "Host Software"
     url = "/software/"
     weight = 20
 
   [[menu.main]]
-    name = "Smart Home Tech"     # Replaces generic reviews. Focus on Smart locks, NoiseAware, etc.
+    name = "Smart Home Tech"
     url = "/smart-tech/"
     weight = 30
 
   [[menu.main]]
-    name = "Calculators"         # Your "Unbeatable" advantage. Link to your tools here.
+    name = "Calculators"
     url = "/tools/"
     weight = 40
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 50
-
-# Improve SEO for global ranking
+# This section enables the Search function and SEO features
 [outputs]
     home = ["HTML", "RSS", "JSON"]
