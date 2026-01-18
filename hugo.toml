@@ -4,42 +4,66 @@ title = "The Technical Host"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
-env = "production"
-title = "The Technical Host"
-description = "Systems and automation for the modern host."
-author = "Admin"
-defaultTheme = "auto"
-ShowCodeCopyButtons = true
-ShowReadingTime = true
-ShowBreadCrumbs = true
+    # --- 1. Identity & SEO ---
+    env = "production"
+    title = "The Technical Host"
+    description = "Engineering high-yield guest experiences. Automation, software, and systems for the modern host."
+    author = "Admin"
+    defaultTheme = "auto"
 
-[params.homeInfoParams]
-Title = "Systemize Your Stays 🚀"
-Content = "I help hosts automate operations and build direct-booking empires."
+    # --- 2. The Unfair Advantages ---
+    ShowCodeCopyButtons = true    # Makes your technical scripts easy to steal/use
+    ShowReadingTime = true        # Signals professional, concise content
+    ShowBreadCrumbs = true        # Helps Google index your high-ticket keywords
+    ShowShareButtons = true       # Encourages social sharing in host communities
+    ShowPostNavLinks = true       # Keeps readers on your site longer
+    ShowToc = true                # Professional Table of Contents for long guides
 
-[params.socialIcons]
-socialIcons = [
-    { name = "github", url = "https://github.com/oyangetheresa-spec" },
-    { name = "linkedin", url = "https://linkedin.com/" }
-]
+    # --- 3. The "Success" Fixes ---
+    # This prevents the "google_analytics.html not found" error
+    [params.analytics.google]
+        id = "" 
 
+    # --- 4. Branding & Social ---
+    [params.label]
+        text = "The Technical Host"
+
+    # Correct Social Icon List
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/oyangetheresa-spec"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/"
+
+    # --- 5. Hero Section ---
+    [params.homeInfoParams]
+        Title = "Systemize Your Stays 🚀"
+        Content = "I help hosts automate operations, maximize yield, and build direct-booking empires using code & software."
+
+# --- 6. Search Advantage (The Engine) ---
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS", "JSON"]
 
+# --- 7. Optimized Navigation ---
 [menu]
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 10
-[[menu.main]]
-name = "Search"
-url = "/search/"
-weight = 20
-[[menu.main]]
-name = "Software"
-url = "/software/"
-weight = 30
-[[menu.main]]
-name = "Calculators"
-url = "/tools/"
-weight = 40
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 15
+  [[menu.main]]
+    name = "Software"
+    url = "/software/"
+    weight = 20
+  [[menu.main]]
+    name = "Smart Tech"
+    url = "/smart-tech/"
+    weight = 30
+  [[menu.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 40
