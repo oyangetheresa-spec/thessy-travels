@@ -1,65 +1,45 @@
-baseURL = 'https://thessy-travels.pages.dev/'
-languageCode = 'en-us'
-title = 'The Technical Host'
+baseURL = "https://thessy-travels.pages.dev/"
+languageCode = "en-us"
+title = "The Technical Host"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
-    # --- 1. Global Site Identity ---
-    env = "production"
-    title = "The Technical Host"
-    description = "Engineering high-yield guest experiences. Systems, software, and automation for the modern host."
-    author = "Admin"
-    defaultTheme = "auto"
+env = "production"
+title = "The Technical Host"
+description = "Systems and automation for the modern host."
+author = "Admin"
+defaultTheme = "auto"
+ShowCodeCopyButtons = true
+ShowReadingTime = true
+ShowBreadCrumbs = true
 
-    # --- 2. THE UNFAIR ADVANTAGES (The Features) ---
-    ShowCodeCopyButtons = true   # Advantage: Users can copy your tech scripts easily
-    ShowReadingTime = true       # Advantage: Respects the busy host's time
-    ShowBreadCrumbs = true       # Advantage: Massive SEO boost for Google rankings
-    ShowShareButtons = true      # Advantage: Helps your tools go viral in host groups
-    ShowPostNavLinks = true      # Advantage: Keeps people clicking through your site
+[params.homeInfoParams]
+Title = "Systemize Your Stays 🚀"
+Content = "I help hosts automate operations and build direct-booking empires."
 
-    # --- 3. Branding & Social ---
-    [params.label]
-        text = "The Technical Host"
+[params.socialIcons]
+socialIcons = [
+    { name = "github", url = "https://github.com/oyangetheresa-spec" },
+    { name = "linkedin", url = "https://linkedin.com/" }
+]
 
-    socialIcons = [
-        { name = "github", url = "https://github.com/oyangetheresa-spec" },
-        { name = "linkedin", url = "https://linkedin.com/" }
-    ]
-
-    # --- 4. The Hero Section ---
-    [params.homeInfoParams]
-        Title = "Systemize Your Stays 🚀"
-        Content = "Stop trading time for bookings. I help hosts automate operations, maximize yield, and build direct-booking empires using code & software."
-
-# --- 5. THE SEARCH ENGINE ADVANTAGE ---
-# This generates the JSON file needed for your lightning-fast search bar
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
-# --- 6. The Professional Navigation ---
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 10
-
-  [[menu.main]]
-    name = "Search"
-    url = "/search/"
-    weight = 15
-
-  [[menu.main]]
-    name = "Software"
-    url = "/software/"
-    weight = 20
-
-  [[menu.main]]
-    name = "Smart Tech"
-    url = "/smart-tech/"
-    weight = 30
-
-  [[menu.main]]
-    name = "Calculators"
-    url = "/tools/"
-    weight = 40
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+[[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 20
+[[menu.main]]
+name = "Software"
+url = "/software/"
+weight = 30
+[[menu.main]]
+name = "Calculators"
+url = "/tools/"
+weight = 40
