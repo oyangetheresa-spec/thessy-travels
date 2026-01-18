@@ -67,3 +67,17 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     name = "Tools"
     url = "/tools/"
     weight = 40
+    [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 50
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60
+
+  [[menu.main]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 70
