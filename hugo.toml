@@ -1,35 +1,62 @@
-baseURL = 'https://thessy-travels.pages.dev/'
+baseURL = 'https://the-technical-host.pages.dev/' # You will need to update your Cloudflare project name later
 languageCode = 'en-us'
-title = 'Smart Travel & Style'
+title = 'The Technical Host'
 theme = ["github.com/adityatelange/hugo-PaperMod"]
+
+enableRobotsTXT = true     # Helps Google index your site properly
+buildDrafts = false
+buildFuture = false
+
 [params]
     env = "production"
-    title = "Smart Travel & Style"
-    description = "Your guide to Jumia deals and Travelstart adventures."
-    author = "Admin"
+    title = "The Technical Host"
+    description = "Engineering better guest experiences. Systems, software, and automation for the modern Airbnb host."
+    author = "Your Name"   # Put your real name here to build 'Expert' authority
+    defaultTheme = "auto"  # Allows Dark Mode (very "tech" friendly)
 
+    # This section controls the big banner on your homepage
     [params.homeInfoParams]
-        Title = "Welcome to Smart Travel & Style 👋"
-        Content = "We help you find the best retail deals and cheapest flights."
+        Title = "Systemize Your Stays 🚀"
+        Content = """
+        Stop trading time for bookings. 
+        I help hosts automate their operations, maximize yield, and build direct-booking empires using code & software.
+        """
 
-   [menu]
+    [params.socialIcons]
+        github = "https://github.com/yourusername"
+        linkedin = "https://linkedin.com/in/yourusername"
+        # twitter = "https://twitter.com/yourusername"
+
+    # Social Media Card previews (When you share links on WhatsApp/LinkedIn)
+    [params.assets]
+        disableHLJS = false # Keeps syntax highlighting for your code blocks
+
+[menu]
   [[menu.main]]
     name = "Home"
     url = "/"
     weight = 10
+
   [[menu.main]]
-    name = "Gear Reviews"      # Great for your Jumia affiliate links
-    url = "/posts/"
+    name = "Host Software"       # Replaces 'Gear Reviews'. High-ticket software reviews (Lodgify, etc.)
+    url = "/software/"
     weight = 20
+
   [[menu.main]]
-    name = "Travel Tips"       # Guides on how to travel better/cheaper
-    url = "/tips/"
+    name = "Smart Home Tech"     # Replaces generic reviews. Focus on Smart locks, NoiseAware, etc.
+    url = "/smart-tech/"
     weight = 30
+
   [[menu.main]]
-    name = "About Us"
-    url = "/about/"
+    name = "Calculators"         # Your "Unbeatable" advantage. Link to your tools here.
+    url = "/tools/"
     weight = 40
+
   [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "About"
+    url = "/about/"
     weight = 50
+
+# Improve SEO for global ranking
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
