@@ -4,9 +4,8 @@ layout: "single"
 description: "Why 'The Technical Host' is the future of short-term rental management."
 ---
 <div style="text-align: center; margin-bottom: 30px;">
-  <img src="/images/theresa.jpeg" alt="Theresa Oyange - The Technical Host" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-  <h2 style="margin-top: 15px; margin-bottom: 0; color: #333;">Theresa Oyange</h2>
-  <p style="font-style: italic; color: #666; margin-top: 5px;">The Technical Host</p>
+  <img src="images/theresa.jpeg" alt="Theresa Oyange" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3;">
+  <h2 style="margin-top: 15px;">Theresa Oyange</h2>
 </div>
 # 🚀 The Technical Host Manifesto
 
