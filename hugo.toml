@@ -81,3 +81,5 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     name = "Privacy"
     url = "/privacy/"
     weight = 70
+[markup.goldmark.renderer]
+  unsafe = true
