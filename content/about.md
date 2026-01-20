@@ -43,6 +43,6 @@ To achieve a "Hands-Off" 20% increase in ROI, I specialize in integrating:
 ---
 
 ### 🤝 Let’s Build the Future
-The Technical Host isn't just about software—it's about **freedom**. Freedom from the manual labor of hosting, and the financial freedom that comes from a perfectly optimized system.
+The Technical Host isn't just about software it's about **freedom**. Freedom from the manual labor of hosting, and the financial freedom that comes from a perfectly optimized system.
 
 [**View My Current Software Stack**](/software/) | [**Get in Touch**](/contact/)
