@@ -5,7 +5,7 @@ description: "How to build a dynamic guest portal that automates 90% of guest in
 ---
 
 # 📱 The Modern Guest Experience
-The #1 reason hosts lose time is "The FAQ Loop"—answering the same five questions every day. A **Technical Guidebook** solves this by putting the answers in the guest’s pocket before they even think to ask.
+The #1 reason hosts lose time is "The FAQ Loop" answering the same five questions every day. A **Technical Guidebook** solves this by putting the answers in the guest’s pocket before they even think to ask.
 
 ### 🛠️ The Tech Stack for Guidebooks
 I recommend using "API-First" platforms that sync directly with your booking calendar:
