@@ -17,6 +17,12 @@ In an era of rising fees and saturated markets, "being a good host" is no longer
 
 ---
 
+### 🏠 Built in the Trenches
+I didn’t just learn this from a manual. **I started this journey as a host.** I know the exhaustion of 2:00 AM guest messages and the chaos of manual scheduling. 
+
+That "hustle" is exactly why I shifted toward engineering. I realized that most hosting headaches aren't hospitality problems—they are **efficiency problems.** I’m here to bridge the gap between human hospitality and high-performance systems.
+
+---
 ### 🛠️ The Competitive Edge
 Here is the difference between a standard host and a **Technical Host**:
 
