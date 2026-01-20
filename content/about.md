@@ -4,7 +4,7 @@ layout: "single"
 description: "Why 'The Technical Host' is the future of short-term rental management."
 ---
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="/images/theresa.jpg" alt="Theresa Oyange - The Technical Host" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3;">
+  <img src="images/theresa.jpg" alt="Theresa Oyange - The Technical Host" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3;">
   <h2 style="margin-top: 10px;">Theresa Oyange</h2>
   <p><i>The Technical Host</i></p>
 </div>
