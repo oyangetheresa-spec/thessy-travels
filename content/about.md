@@ -3,9 +3,14 @@ title: "Engineering the Guest Experience"
 layout: "single"
 description: "Why 'The Technical Host' is the future of short-term rental management."
 ---
-![Theresa Oyange](https://thessy-travels.pages.dev/images/theresa.jpeg)
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="https://thessy-travels.pages.dev/images/theresa.jpeg" 
+       alt="Theresa Oyange" 
+       style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3; display: block; margin: 0 auto;">
+  <h2 style="margin-top: 10px; color: #333;">Theresa Oyange</h2>
+  <p style="font-style: italic; color: #666;">The Technical Host</p>
+</div>
 
-# 🚀 The Technical Host Manifesto
 # 🚀 The Technical Host Manifesto
 
 Most property managers focus on **Hospitality**.  
