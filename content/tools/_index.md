@@ -5,28 +5,21 @@ layout: "list"
 # Optional: Add keywords for SEO internal tracking
 keywords: ["Airbnb ROI Calculator", "STR Automation", "Short Term Rental Tools", "Host ROI"]
 ---
-
-
-<section class="tools-hero" style="padding-bottom: 2rem; border-bottom: 1px solid #eee; margin-bottom: 2rem;">
-    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">
-        📊 The Technical Host’s Command Center
+<header class="tools-header" style="padding: 40px 0; border-bottom: 2px solid #f0f0f0; margin-bottom: 40px;">
+    <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.1; margin-bottom: 15px; color: #1a1a1a;">
+        The Airbnb Automation Toolkit
     </h1>
-    <p class="lead-text" style="font-size: 1.2rem; color: #555; margin-bottom: 1.5rem;">
-        <em>Turn your property into a high-yield, zero-touch asset.</em>
-    </p>
-    
-    <p>
-        Professional hosting isn’t a guessing game; it’s a math problem. Most hosts lose <strong>$5,000+ per year</strong> in "leaked" time and inefficient pricing. Use these data-driven tools to reclaim 10+ hours a week and optimize your daily operations.
+    <p style="font-size: 1.25rem; color: #666; max-width: 800px; line-height: 1.6; margin-bottom: 30px;">
+        Professional-grade resources to help you run the numbers, reclaim your time, and scale your property portfolio using data, not guesswork.
     </p>
 
-    <nav class="quick-nav" style="background: #f9f9f9; padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
-        <span style="font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Jump To Tool:</span>
-        <ul style="list-style: none; display: flex; gap: 15px; padding: 0; margin: 10px 0 0 0; flex-wrap: wrap;">
-            <li><a href="#yield" style="text-decoration: none; color: #007bff; font-weight: 500;">📈 Yield Optimizer</a></li>
-            <li><a href="#cleaning" style="text-decoration: none; color: #007bff; font-weight: 500;">🧹 Cleaning Fee Calc</a></li>
-            <li><a href="#audit" style="text-decoration: none; color: #007bff; font-weight: 500;">🤖 Automation Audit</a></li>
-            <li><a href="#checklist" style="text-decoration: none; color: #007bff; font-weight: 500;">✅ 2026 Tech Checklist</a></li>
-        </ul>
-    </nav>
-</section>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+        <span style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; color: #999;">Quick Access:</span>
+        <a href="#yield" style="padding: 8px 16px; background: #000; color: #fff; border-radius: 50px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">📊 Yield Optimizer</a>
+        <a href="#cleaning" style="padding: 8px 16px; background: #f4f4f4; color: #333; border-radius: 50px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">🧹 Cleaning Calc</a>
+        <a href="#audit" style="padding: 8px 16px; background: #f4f4f4; color: #333; border-radius: 50px; text-decoration: none; font-size: 0.9rem; font-weight: 600;">🤖 Tech Audit</a>
+    </div>
+</header>
+
+
 ---
