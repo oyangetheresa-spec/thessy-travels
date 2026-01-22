@@ -53,9 +53,17 @@ Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's
 
   <strong>🔍 Your Technical Score:</strong>
   <ul>
-    <li>0-2 Checks: Manual Operator (Losing 10-15 hrs/week).</li>
-    <li>3-5 Checks: Emerging Tech Host (Siloed systems).</li>
-    <li>6-7 Checks: Technical Host (Scalable asset).</li>
+   <li style="margin-bottom: 15px;">
+    <strong>🔴 0-2 Checks: The Manual Operator</strong> — You don’t own a business; you’ve bought yourself a high-stress, 24/7 job. You are the "Single Point of Failure." If you drop your phone, your business stops. You are losing 15+ hours a week to tasks that cost $0 to automate.
+  </li>
+  
+  <li style="margin-bottom: 15px;">
+    <strong>🟡 3-5 Checks: The Emerging Tech Host</strong> — You have the right tools, but you’re paying a "Complexity Tax." Your apps don't talk to each other, so you’ve become the manual bridge between them. You’re automated, but you aren’t <em>liberated</em> yet.
+  </li>
+  
+  <li style="margin-bottom: 15px;">
+    <strong>🟢 6-7 Checks: The Technical Host</strong> — You own a scalable asset. Your tech stack is a unified ecosystem that generates revenue while you sleep, travel, or hunt for your next deal. You have successfully replaced yourself with a system.
+  </li>
   </ul>
 
   </div>
