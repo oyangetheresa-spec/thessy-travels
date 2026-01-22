@@ -24,7 +24,7 @@ Professional hosting isn’t a guessing game; it’s a math problem. Use these t
 
 ### **The Yield Optimizer** Compare your ROI across different PMS platforms. 
 > **Technical Edge:** Most hosts forget to factor in API sync fees. This tool accounts for "hidden" software costs.
-[Launch Optimizer →](#) *(Affiliate Link Opportunity)*
+[Launch Optimizer →](#)
 
 ### **Cleaning Fee Calculator** {#cleaning}
 Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's rates. 
