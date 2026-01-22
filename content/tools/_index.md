@@ -33,40 +33,34 @@ Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's
 ---
 ## 🤖 The 2026 Automation Audit {#audit}
 
-**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks—a mix of apps that don't talk to each other. 
+**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks.
 
-<details style="background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer;">
-  <summary style="font-weight: bold; font-size: 1.1rem; color: #000;">
-    👉 Click here to start the 7-Point Audit
+<details>
+  <summary style="cursor: pointer; padding: 10px; background: #000; color: #fff; border-radius: 5px; font-weight: bold;">
+    👉 Click to Open the 7-Point Audit
   </summary>
-  
-  <div style="margin-top: 15px; line-height: 1.6;">
-    <ol>
-      <li><strong>Zero-Touch Messaging:</strong> Do guests receive check-in info, Wi-Fi, and checkout reminders automatically without you touching a button?</li>
-      <li><strong>The Hardware-Software Bridge:</strong> Does your Smart Lock generate a unique, time-bound code for every guest synced to their stay dates?</li>
-      <li><strong>Real-Time Yield Intelligence:</strong> Is your pricing updating at least 4x daily based on local hotel compression, weather, and events?</li>
-      <li><strong>Noise-to-Privacy Shield:</strong> Do you have sensors that automatically text the guest a "friendly reminder" if decibels exceed limits for >10 mins?</li>
-      <li><strong>Unified Inbox Management:</strong> Are you managing Airbnb, VRBO, and Direct Bookings in one single "Source of Truth" screen?</li>
-      <li><strong>Auto-Pilot Turnovers:</strong> Does your cleaning team receive a calendar invite and a dynamic task list the second a new booking is confirmed?</li>
-      <li><strong>The Digital Concierge:</strong> Is your guidebook API-connected to automatically pull the guest’s name and their specific door code into the welcome screen?</li>
-    </ol>
+  <div style="padding: 15px; border: 1px solid #eee; border-top: none;">
 
-    <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+  <strong>1. Zero-Touch Messaging:</strong> Do guests receive check-in info and Wi-Fi codes automatically?<br><br>
+  <strong>2. The Hardware Bridge:</strong> Does your Smart Lock auto-generate unique codes for every guest?<br><br>
+  <strong>3. Yield Intelligence:</strong> Is your pricing updating 4x daily based on local events?<br><br>
+  <strong>4. Noise-to-Privacy Shield:</strong> Do you have sensors that auto-text guests during noise violations?<br><br>
+  <strong>5. Unified Inbox:</strong> Are you managing all platforms (Airbnb/VRBO) in one single screen?<br><br>
+  <strong>6. Auto-Pilot Turnovers:</strong> Does your cleaning team get a task list automatically on booking?<br><br>
+  <strong>7. Digital Concierge:</strong> Is your guidebook API-connected to show guest-specific info?<br><br>
 
-    <h4>🔍 Your Technical Score:</h4>
-    <ul>
-      <li><strong>0-2 Checks: The Manual Operator.</strong> You have a high-stress part-time job. You are likely losing 10-15 hours a week on "busy work."</li>
-      <li><strong>3-5 Checks: The Emerging Tech Host.</strong> Your systems are working, but they aren’t "talking" to each other. You are still the middle-man.</li>
-      <li><strong>6-7 Checks: The Technical Host.</strong> Your business is a scalable, zero-touch asset.</li>
-    </ul>
+  <hr>
 
-    <blockquote style="background: #fff; border-left: 5px solid #000; padding: 10px; margin: 10px 0;">
-      <strong>Technical Edge:</strong> If you scored below a 5, your "Tech Leak" is likely costing you more in labor than the software subscriptions themselves.
-    </blockquote>
+  <strong>🔍 Your Technical Score:</strong>
+  <ul>
+    <li>0-2 Checks: Manual Operator (Losing 10-15 hrs/week).</li>
+    <li>3-5 Checks: Emerging Tech Host (Siloed systems).</li>
+    <li>6-7 Checks: Technical Host (Scalable asset).</li>
+  </ul>
+
   </div>
 </details>
 
----
 
 ---
 
