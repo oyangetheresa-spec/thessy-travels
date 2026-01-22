@@ -34,15 +34,22 @@ Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's
 
 ## 🤖 The 2026 Automation Audit {#audit}
 
-**Is your tech stack costing you money?** Use this checklist to see if you are a *Technical Host* or a *Manual Operator*.
+**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks—a mix of apps that don't talk to each other. Use this 7-point audit to see if you are a **Technical Host** or a **Manual Operator**.
 
-* **The “Zero-Touch” Messaging Test:** Do guests receive check-in instructions automatically without you touching a button?
-* **The Hardware-Software Bridge:** Does your Smart Lock generate a unique code for every guest automatically?
-* **Yield Intelligence:** Is your pricing updating 4x daily based on local events?
+1.  **Zero-Touch Messaging:** Do guests receive check-in info, Wi-Fi, and checkout reminders automatically without you touching a button?
+2.  **The Hardware-Software Bridge:** Does your Smart Lock generate a unique, time-bound code for every guest synced to their stay dates?
+3.  **Real-Time Yield Intelligence:** Is your pricing updating at least 4x daily based on local hotel compression, weather, and events?
+4.  **Noise-to-Privacy Shield:** Do you have sensors that automatically text the guest a "friendly reminder" if decibels exceed limits for >10 mins?
+5.  **Unified Inbox Management:** Are you managing Airbnb, VRBO, and Direct Bookings in one single "Source of Truth" screen?
+6.  **Auto-Pilot Turnovers:** Does your cleaning team receive a calendar invite and a dynamic task list the second a new booking is confirmed?
+7.  **The Digital Concierge:** Is your guidebook API-connected to automatically pull the guest’s name and their specific door code into the welcome screen?
 
-**Your Score:**
-* **0-2 Checks:** Manual Operator (Losing 10-15 hours/week).
-* **6+ Checks:** Technical Host (Scalable Asset).
+#### 🔍 Your Technical Score:
+* **0-2 Checks: The Manual Operator.** You have a high-stress part-time job. You are likely losing 10-15 hours a week on "busy work."
+* **3-5 Checks: The Emerging Tech Host.** Your systems are working, but they aren’t "talking" to each other. You are still the middle-man.
+* **6-7 Checks: The Technical Host.** Your business is a scalable, zero-touch asset. You can add 10 properties without adding 10 hours of work.
+
+> **Technical Edge:** If you scored below a 5, your "Tech Leak" is likely costing you more in labor than the software subscriptions themselves.
 
 ---
 
