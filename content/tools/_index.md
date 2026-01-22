@@ -54,7 +54,7 @@ Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's
   <strong>🔍 Your Technical Score:</strong>
   <ul>
    <li style="margin-bottom: 15px;">
-    <strong>🔴 0-2 Checks: The Manual Operator</strong> — You don’t own a business; you’ve bought yourself a high-stress, 24/7 job. You are the "Single Point of Failure." If you drop your phone, your business stops. You are losing 15+ hours a week to tasks that cost $0 to automate.
+    <strong>🔴 0-2 Checks: The Manual Operator</strong> — You don’t own a business; you’ve bought yourself a high-stress, 24/7 job. You are at the "Single Point of Failure." If you drop your phone, your business stops. You are losing 15+ hours a week to tasks that cost $0 to automate.
   </li>
   
   <li style="margin-bottom: 15px;">
