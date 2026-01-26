@@ -11,6 +11,8 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     author = "Admin"
     defaultTheme = "auto"
 
+    customCSS = ["css/custom.css"]
+
     # --- 2. The Unfair Advantages ---
     ShowCodeCopyButtons = true    # Makes your technical scripts easy to steal/use
     ShowReadingTime = true        # Signals professional, concise content
