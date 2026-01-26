@@ -1,0 +1,39 @@
+/* --- Mobile Menu 2-Column Grid --- */
+@media screen and (max-width: 768px) {
+  
+  /* 1. The Container: Force the list into a grid */
+  nav ul, .menu, .nav-links, .navbar-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 8px; /* Space between buttons */
+    padding: 10px;
+    margin: 0;
+    list-style: none; /* Remove bullet points */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* 2. The Buttons: Make them look clickable */
+  nav ul li a, .menu-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Light grey background */
+    border: 1px solid #e9ecef; /* Subtle border */
+    border-radius: 6px; /* Rounded corners */
+    padding: 12px 5px; /* Vertical padding is important for thumbs */
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333; /* Dark text */
+    height: 100%; /* Ensure equal height */
+  }
+
+  /* 3. Optional: Make the active link stand out */
+  nav ul li.active a {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    font-weight: bold;
+  }
+}
