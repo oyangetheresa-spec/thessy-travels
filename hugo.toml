@@ -1,4 +1,4 @@
-baseURL = "https://thessy-travels.pages.dev/"
+baseURL = "https://the-technical-host.com"
 languageCode = "en-us"
 title = "The Technical Host"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
