@@ -9,7 +9,7 @@ description: "How to eliminate the 'Complexity Tax' and sync your STR tech stack
 
 # The Emerging Tech Blueprint: From "Automated" to "Liberated"
 
-You scored an **Emerging Tech Host** rating. Congratulations—you’ve moved past the manual grind. You have the tools, but you’re likely facing a new problem: **The Complexity Tax.**
+You scored an **Emerging Tech Host** rating. Congratulations, you’ve moved past the manual grind. You have the tools, but you’re likely facing a new problem: **The Complexity Tax.**
 
 ### The Reality Check
 You have the apps (a PMS, a pricing tool, maybe a smart lock), but they aren't "talking" to each other perfectly. You are likely spending your week:
@@ -30,4 +30,4 @@ We need to move from being a "Software User" to a **"System Architect."** We wil
 ---
 
 ### The Master Stack
-*You have the pieces, now you need the glue. I’m building a deep-dive comparison of the 2026 'API-First' tech stacks—designed to help you stop managing software and start managing assets.* **[Click here to be notified when the 2026 Tech Stack Comparison drops.]**
+*You have the pieces, now you need the glue. I’m building a deep-dive comparison of the 2026 'API-First' tech stacks, designed to help you stop managing software and start managing assets.* **[Click here to be notified when the 2026 Tech Stack Comparison drops.]**
