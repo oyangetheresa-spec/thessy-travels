@@ -45,13 +45,9 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 </div>
 
 <button onclick="runAuditLogic()" style="background: #000; color: #fff; padding: 15px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">Calculate My Technical Score</button>
-
-<div id="result-display-box" style="display: none; margin-top: 25px; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
-<h3 id="res-title" style="margin-top: 0;"></h3>
-<p id="res-text" style="font-size: 0.95rem; line-height: 1.5;"></p>
-<hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
-<a href="https://calendly.com/your-link" style="display: inline-block; background: #0070f3; color: #fff !important; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Book a Free Tech Gap Analysis</a>
-</div>
+<button onclick="runAudit()" class="btn-primary" style="width: 100%; cursor: pointer; background: #000; color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold;">
+    Calculate My Technical Score & Unlock Roadmap
+</button>
 </div>
 
 <script>
