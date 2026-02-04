@@ -1,84 +1,106 @@
 ---
-title: "The Airbnb Automation Toolkit: Free ROI & Operations Calculators"
-description: "Professional-grade tools for data-driven hosts. Calculate your STR yield, audit your automation tech stack, and eliminate manual hosting tasks. Updated for 2026."
+title: "Free Airbnb Automation ROI Calculators & Tech Audit (2026)"
+description: "Professional-grade tools for data-driven hosts. Calculate your STR yield, audit your tech stack, and eliminate manual hosting tasks. Free tools for 2026."
 layout: "list"
-# Optional: Add keywords for SEO internal tracking
-keywords: ["Airbnb ROI Calculator", "STR Automation", "Short Term Rental Tools", "Host ROI"]
+keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Rental Tools", "Host Automation ROI"]
 ---
+
+<style>
+    :root { --brand-black: #000; --brand-gray: #f4f4f4; --brand-accent: #0070f3; }
+    .tool-card { border: 1px solid #ddd; padding: 20px; border-radius: 12px; margin-bottom: 25px; background: #fff; transition: 0.3s; }
+    .tool-card:hover { border-color: var(--brand-black); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .btn-primary { background: var(--brand-black); color: #fff !important; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: bold; border: none; cursor: pointer; }
+    .audit-grid { display: grid; gap: 10px; margin: 20px 0; }
+    .audit-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px; background: var(--brand-gray); border-radius: 8px; cursor: pointer; }
+    .audit-item input { margin-top: 5px; }
+    .result-box { display: none; margin-top: 20px; padding: 20px; border-radius: 8px; animation: fadeIn 0.5s; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @media (max-width: 600px) { .hero-btns { flex-direction: column; } }
+</style>
+
 # The Airbnb Automation Toolkit
-#### *Updated: January 2026 • Curated by The Technical Host*
+#### *Updated: February 2026 • Curated by The Technical Host*
 
-Professional-grade resources to help you run the numbers, reclaim your time, and scale your property portfolio using data, not guesswork.
+**Professional-grade resources to help you run the numbers, reclaim your time, and scale your property portfolio using data, not guesswork.**
 
-<div style="display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0;">
-    <a href="#yield" style="padding: 8px 15px; background: #000; color: #fff !important; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">📊 Yield Optimizer</a>
-    <a href="#cleaning" style="padding: 8px 15px; background: #eee; color: #333 !important; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">🧹 Cleaning Calc</a>
-    <a href="#audit" style="padding: 8px 15px; background: #eee; color: #333 !important; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">🤖 Tech Audit</a>
+<div class="hero-btns" style="display: flex; gap: 10px; margin: 20px 0;">
+    <a href="#audit" class="btn-primary">Take the 2026 Tech Audit</a>
+    <a href="#yield" class="btn-primary" style="background: #eee; color: #333 !important;">Yield Optimizer</a>
+</div>
+
+---
+
+## 🤖 The 2026 Automation Audit {#audit}
+**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks. Check the boxes that apply to your business:
+
+<div id="audit-tool" class="tool-card">
+    <div class="audit-grid">
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Zero-Touch Messaging:</strong> Guests get info/Wi-Fi automatically.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Hardware Bridge:</strong> Smart Lock codes auto-generate per guest.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Yield Intelligence:</strong> Pricing updates 4x daily via API.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Noise-to-Privacy:</strong> Sensors auto-text guests during violations.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Unified Inbox:</strong> Managing all platforms in one single screen.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Auto-Pilot Turnovers:</strong> Cleaners get auto-tasks on booking.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Digital Concierge:</strong> Guidebook is API-connected to guest data.</span></label>
+    </div>
+    <button onclick="calculateAudit()" class="btn-primary">Calculate My Technical Score</button>
+
+    <div id="audit-result" class="result-box">
+        <h3 id="result-title"></h3>
+        <p id="result-text"></p>
+        <a href="https://calendly.com/your-link" class="btn-primary" style="margin-top:10px;">Book a Free Tech Gap Analysis</a>
+    </div>
 </div>
 
 ---
 
 ## 📊 Technical Tools & ROI Calculators {#yield}
 
-Professional hosting isn’t a guessing game; it’s a math problem. Use these tools to identify high-yield opportunities.
+### **The STR Yield & Fee Optimizer** Most hosts ignore the "Complexity Tax"—the hidden cost of API fees and manual labor. 
+> **The Formula:** $$Net\ Yield = Revenue - (Cleaning + Software\ Fees + Manual\ Labor\ Hours \times Hourly\ Rate)$$
 
-### **The Yield Optimizer** Compare your ROI across different PMS platforms. 
-> **Technical Edge:** Most hosts forget to factor in API sync fees. This tool accounts for "hidden" software costs.
-[Launch Optimizer →](#)
+[Launch Full Calculator (Internal Link) →](#)
 
-### **Cleaning Fee Calculator** {#cleaning}
-Ensure your turnovers are profitable. Don't just "guess" based on the neighbor's rates. 
-[Calculate Your Margins →](#)
+<div class="tool-card" id="cleaning">
+    <h3>Cleaning Margin Checker</h3>
+    <p>Calculate if your cleaning fee covers the "Hidden Costs" (Admin + Laundry + Supplies).</p>
+    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 300px;">
+        <input type="number" id="c-fee" placeholder="Guest Cleaning Fee ($)">
+        <input type="number" id="c-cost" placeholder="Paid to Cleaner ($)">
+        <button onclick="calcCleaning()" class="btn-primary">Check Margins</button>
+        <p id="c-result" style="font-weight: bold;"></p>
+    </div>
+</div>
 
----
-## 🤖 The 2026 Automation Audit {#audit}
+<script>
+function calculateAudit() {
+    const checks = document.querySelectorAll('.audit-check:checked').length;
+    const resultBox = document.getElementById('audit-result');
+    const title = document.getElementById('result-title');
+    const text = document.getElementById('result-text');
+    
+    resultBox.style.display = 'block';
+    if(checks <= 2) {
+        resultBox.style.background = '#fff0f0';
+        title.innerHTML = "🔴 The Manual Operator";
+        text.innerHTML = "You are a 'Single Point of Failure.' If you drop your phone, your business stops. You are likely losing 15+ hours a week to manual tasks.";
+    } else if(checks <= 5) {
+        resultBox.style.background = '#fff9e6';
+        title.innerHTML = "🟡 The Emerging Tech Host";
+        text.innerHTML = "You have the tools, but they aren't 'talking' to each other. You're paying a Complexity Tax by being the manual bridge between apps.";
+    } else {
+        resultBox.style.background = '#e6fffa';
+        title.innerHTML = "🟢 The Technical Host";
+        text.innerHTML = "Your tech stack is a unified ecosystem. You have successfully replaced yourself with a system that generates revenue while you sleep.";
+    }
+}
 
-**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks.
-
-<details>
-  <summary style="cursor: pointer; padding: 10px; background: #000; color: #fff; border-radius: 5px; font-weight: bold;">
-    👉 Click to Open the 7-Point Audit
-  </summary>
-  <div style="padding: 15px; border: 1px solid #eee; border-top: none;">
-
-  <strong>1. Zero-Touch Messaging:</strong> Do guests receive check-in info and Wi-Fi codes automatically?<br><br>
-  <strong>2. The Hardware Bridge:</strong> Does your Smart Lock auto-generate unique codes for every guest?<br><br>
-  <strong>3. Yield Intelligence:</strong> Is your pricing updating 4x daily based on local events?<br><br>
-  <strong>4. Noise-to-Privacy Shield:</strong> Do you have sensors that auto-text guests during noise violations?<br><br>
-  <strong>5. Unified Inbox:</strong> Are you managing all platforms (Airbnb/VRBO) in one single screen?<br><br>
-  <strong>6. Auto-Pilot Turnovers:</strong> Does your cleaning team get a task list automatically on booking?<br><br>
-  <strong>7. Digital Concierge:</strong> Is your guidebook API-connected to show guest-specific info?<br><br>
-
-  <hr>
-
-  <strong>🔍 Your Technical Score:</strong>
-  <ul>
-   <li style="margin-bottom: 15px;">
-    <strong>🔴 0-2 Checks: The Manual Operator</strong> — You don’t own a business; you’ve bought yourself a high-stress, 24/7 job. You are at the "Single Point of Failure." If you drop your phone, your business stops. You are losing 15+ hours a week to tasks that cost $0 to automate.
-  </li>
-  
-  <li style="margin-bottom: 15px;">
-    <strong>🟡 3-5 Checks: The Emerging Tech Host</strong> — You have the right tools, but you’re paying a "Complexity Tax." Your apps don't talk to each other, so you’ve become the manual bridge between them. You’re automated, but you aren’t <em>liberated</em> yet.
-  </li>
-  
-  <li style="margin-bottom: 15px;">
-    <strong>🟢 6-7 Checks: The Technical Host</strong> — You own a scalable asset. Your tech stack is a unified ecosystem that generates revenue while you sleep, travel, or hunt for your next deal. You have successfully replaced yourself with a system.
-  </li>
-  </ul>
-
-  </div>
-</details>
-
-
----
-
-## 📱 The Zero-Question Digital Guidebook
-
-The #1 reason hosts lose time is **“The FAQ Loop.”** A Technical Guidebook solves this by putting answers in the guest’s pocket.
-
-**Recommended Tech Stack:**
-1.  **Hostfully:** The industry standard for professional scaling.
-2.  **TouchStay:** Best for storytelling and local recommendations.
-
-
----
+function calcCleaning() {
+    const fee = document.getElementById('c-fee').value;
+    const cost = document.getElementById('c-cost').value;
+    const margin = fee - cost;
+    const res = document.getElementById('c-result');
+    if(margin <= 0) res.innerHTML = "⚠️ You are losing money on turnovers!";
+    else res.innerHTML = "✅ Your margin is $" + margin + " per stay.";
+}
+</script>
