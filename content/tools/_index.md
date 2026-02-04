@@ -31,26 +31,54 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 ---
 
 ## 🤖 The 2026 Automation Audit {#audit}
-**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks. Check the boxes that apply to your business:
+**Is your tech stack costing you money?** Most hosts have "accidental" tech stacks. Check the boxes that apply:
 
-<div id="audit-tool" class="tool-card">
-    <div class="audit-grid">
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Zero-Touch Messaging:</strong> Guests get info/Wi-Fi automatically.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Hardware Bridge:</strong> Smart Lock codes auto-generate per guest.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Yield Intelligence:</strong> Pricing updates 4x daily via API.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Noise-to-Privacy:</strong> Sensors auto-text guests during violations.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Unified Inbox:</strong> Managing all platforms in one single screen.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Auto-Pilot Turnovers:</strong> Cleaners get auto-tasks on booking.</span></label>
-        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Digital Concierge:</strong> Guidebook is API-connected to guest data.</span></label>
-    </div>
-    <button onclick="calculateAudit()" class="btn-primary">Calculate My Technical Score</button>
-
-    <div id="audit-result" class="result-box">
-        <h3 id="result-title"></h3>
-        <p id="result-text"></p>
-        <a href="https://calendly.com/your-link" class="btn-primary" style="margin-top:10px;">Book a Free Tech Gap Analysis</a>
-    </div>
+<div id="audit-tool" style="border: 1px solid #ddd; padding: 25px; border-radius: 12px; background: #fff; margin: 20px 0;">
+<div class="audit-grid" style="display: grid; gap: 12px; margin-bottom: 20px;">
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Zero-Touch Messaging:</strong> Guests get info/Wi-Fi automatically.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Hardware Bridge:</strong> Smart Lock codes auto-generate per guest.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Yield Intelligence:</strong> Pricing updates 4x daily via API.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Noise-to-Privacy:</strong> Sensors auto-text guests during violations.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Unified Inbox:</strong> Managing all platforms in one single screen.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Auto-Pilot Turnovers:</strong> Cleaners get auto-tasks on booking.</span></label>
+<label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Digital Concierge:</strong> Guidebook is API-connected to guest data.</span></label>
 </div>
+
+<button onclick="runAuditLogic()" style="background: #000; color: #fff; padding: 15px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">Calculate My Technical Score</button>
+
+<div id="result-display-box" style="display: none; margin-top: 25px; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+<h3 id="res-title" style="margin-top: 0;"></h3>
+<p id="res-text" style="font-size: 0.95rem; line-height: 1.5;"></p>
+<hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+<a href="https://calendly.com/your-link" style="display: inline-block; background: #0070f3; color: #fff !important; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Book a Free Tech Gap Analysis</a>
+</div>
+</div>
+
+<script>
+function runAuditLogic() {
+    const score = document.querySelectorAll('.audit-check:checked').length;
+    const box = document.getElementById('result-display-box');
+    const title = document.getElementById('res-title');
+    const text = document.getElementById('res-text');
+    
+    box.style.display = 'block';
+    
+    if (score <= 2) {
+        box.style.background = '#fff5f5';
+        title.innerHTML = "🔴 The Manual Operator";
+        text.innerHTML = "Score: " + score + "/7. You are at the 'Single Point of Failure.'";
+    } else if (score <= 5) {
+        box.style.background = '#fffdf2';
+        title.innerHTML = "🟡 The Emerging Tech Host";
+        text.innerHTML = "Score: " + score + "/7. You're paying a 'Complexity Tax.'";
+    } else {
+        box.style.background = '#f2fff9';
+        title.innerHTML = "🟢 The Technical Host";
+        text.innerHTML = "Score: " + score + "/7. You own a scalable, automated asset.";
+    }
+    box.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 ---
 
 ## 📊 Technical Tools & ROI Calculators {#yield}
