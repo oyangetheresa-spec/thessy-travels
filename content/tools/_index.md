@@ -33,81 +33,24 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 ## 🤖 The 2026 Automation Audit {#audit}
 **Is your tech stack costing you money?** Most hosts have "accidental" tech stacks. Check the boxes that apply to your business:
 
-<div id="audit-tool-container" class="tool-card" style="border: 1px solid #ddd; padding: 25px; border-radius: 12px; background: #fff;">
-    
-    <div class="audit-grid" style="display: grid; gap: 12px; margin-bottom: 20px;">
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Zero-Touch Messaging:</strong> Automatic check-in/Wi-Fi info.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>The Hardware Bridge:</strong> Unique Smart Lock codes per guest.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Yield Intelligence:</strong> Pricing updates 4x daily based on data.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Noise-to-Privacy Shield:</strong> Automated guest noise alerts.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Unified Inbox:</strong> One screen for Airbnb, VRBO, and Direct.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Auto-Pilot Turnovers:</strong> Cleaners get tasks automatically.</span>
-        </label>
-        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
-            <input type="checkbox" class="audit-check" style="margin-top: 5px;"> 
-            <span><strong>Digital Concierge:</strong> Guidebook syncs with guest stay dates.</span>
-        </label>
+<div id="audit-tool" class="tool-card">
+    <div class="audit-grid">
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Zero-Touch Messaging:</strong> Guests get info/Wi-Fi automatically.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Hardware Bridge:</strong> Smart Lock codes auto-generate per guest.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Yield Intelligence:</strong> Pricing updates 4x daily via API.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Noise-to-Privacy:</strong> Sensors auto-text guests during violations.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Unified Inbox:</strong> Managing all platforms in one single screen.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Auto-Pilot Turnovers:</strong> Cleaners get auto-tasks on booking.</span></label>
+        <label class="audit-item"><input type="checkbox" class="audit-check"> <span><strong>Digital Concierge:</strong> Guidebook is API-connected to guest data.</span></label>
     </div>
+    <button onclick="calculateAudit()" class="btn-primary">Calculate My Technical Score</button>
 
-    <button onclick="runAudit()" style="background: #000; color: #fff; padding: 12px 25px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">
-        Calculate My Technical Score
-    </button>
-
-    <div id="audit-result" style="display: none; margin-top: 25px; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
-        <h3 id="result-title" style="margin-top: 0;"></h3>
-        <p id="result-text" style="font-size: 0.95rem; line-height: 1.5;"></p>
-        <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
-        <a href="https://calendly.com/your-link" style="display: inline-block; background: #0070f3; color: #fff !important; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Book a Free Tech Gap Analysis</a>
+    <div id="audit-result" class="result-box">
+        <h3 id="result-title"></h3>
+        <p id="result-text"></p>
+        <a href="https://calendly.com/your-link" class="btn-primary" style="margin-top:10px;">Book a Free Tech Gap Analysis</a>
     </div>
 </div>
-
-<script>
-function runAudit() {
-    // Select all checked boxes
-    const score = document.querySelectorAll('.audit-check:checked').length;
-    const resultBox = document.getElementById('audit-result');
-    const title = document.getElementById('result-title');
-    const text = document.getElementById('result-text');
-
-    // Make the result visible
-    resultBox.style.display = 'block';
-
-    // Logic for scores
-    if (score <= 2) {
-        resultBox.style.backgroundColor = '#fff5f5';
-        title.innerHTML = "🔴 The Manual Operator";
-        text.innerHTML = "<strong>Score: " + score + "/7</strong><br>You don't own a business; you've bought yourself a 24/7 job. You are at the 'Single Point of Failure.' If you drop your phone, your business stops.";
-    } else if (score <= 5) {
-        resultBox.style.backgroundColor = '#fffdf2';
-        title.innerHTML = "🟡 The Emerging Tech Host";
-        text.innerHTML = "<strong>Score: " + score + "/7</strong><br>You have the right tools, but you're paying a 'Complexity Tax.' You are currently the manual bridge between your apps. You are automated, but not yet liberated.";
-    } else {
-        resultBox.style.backgroundColor = '#f2fff9';
-        title.innerHTML = "🟢 The Technical Host";
-        text.innerHTML = "<strong>Score: " + score + "/7</strong><br>You own a scalable asset. Your tech stack is a unified ecosystem that generates revenue while you sleep. You have successfully replaced yourself with a system.";
-    }
-
-    // Smooth scroll to result
-    resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-</script>
 ---
 
 ## 📊 Technical Tools & ROI Calculators {#yield}
