@@ -55,28 +55,25 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 </div>
 
 <script>
-function runAuditLogic() {
+function runAudit() {
+    // 1. Calculate the score
     const score = document.querySelectorAll('.audit-check:checked').length;
-    const box = document.getElementById('result-display-box');
-    const title = document.getElementById('res-title');
-    const text = document.getElementById('res-text');
+    const btn = document.querySelector('.btn-primary');
     
-    box.style.display = 'block';
-    
-    if (score <= 2) {
-        box.style.background = '#fff5f5';
-        title.innerHTML = "🔴 The Manual Operator";
-        text.innerHTML = "Score: " + score + "/7. You are at the 'Single Point of Failure.'";
-    } else if (score <= 5) {
-        box.style.background = '#fffdf2';
-        title.innerHTML = "🟡 The Emerging Tech Host";
-        text.innerHTML = "Score: " + score + "/7. You're paying a 'Complexity Tax.'";
-    } else {
-        box.style.background = '#f2fff9';
-        title.innerHTML = "🟢 The Technical Host";
-        text.innerHTML = "Score: " + score + "/7. You own a scalable, automated asset.";
-    }
-    box.scrollIntoView({ behavior: 'smooth' });
+    // 2. Visual feedback (Change button text to show it's "thinking")
+    btn.innerHTML = "Analyzing Your Tech Stack...";
+    btn.style.opacity = "0.7";
+
+    // 3. Small delay for "Expert" feel, then Redirect
+    setTimeout(function() {
+        if (score <= 2) {
+            window.location.href = "/manual-operator-fix/";
+        } else if (score <= 5) {
+            window.location.href = "/tech-host-blueprint/";
+        } else {
+            window.location.href = "/advanced-automation/";
+        }
+    }, 600); 
 }
 </script>
 ---
