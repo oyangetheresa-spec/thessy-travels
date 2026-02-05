@@ -44,9 +44,13 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 <label style="display: flex; gap: 10px; cursor: pointer;"><input type="checkbox" class="audit-check"> <span><strong>Digital Concierge:</strong> Guidebook is API-connected to guest data.</span></label>
 </div>
 
-<button onclick="runAuditLogic()" style="background: #000; color: #fff; padding: 15px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">Calculate My Technical Score</button>
-<button onclick="runAudit()" class="btn-primary" style="width: 100%; cursor: pointer; background: #000; color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold;">
-    Calculate My Technical Score & Unlock Roadmap
+<div id="score-reveal" style="display:none; text-align:center; margin: 20px 0; padding: 25px; border: 2px solid #000; border-radius: 12px; background: #f9f9f9;">
+    <h2 style="margin:0; font-size: 1.5rem;">Your Technical Score: <span id="final-number" style="color: #0070f3;">0</span>/7</h2>
+    <p id="score-tagline" style="margin: 10px 0 0 0; font-weight: bold; font-style: italic;"></p>
+</div>
+
+<button id="audit-btn" onclick="runAudit()" style="background: #000; color: #fff; padding: 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1.1rem;">
+    Calculate My Technical Score
 </button>
 </div>
 
