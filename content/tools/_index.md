@@ -58,22 +58,44 @@ keywords: ["Airbnb ROI Calculator 2026", "STR Automation Audit", "Short Term Ren
 function runAudit() {
     // 1. Calculate the score
     const score = document.querySelectorAll('.audit-check:checked').length;
-    const btn = document.querySelector('.btn-primary');
-    
-    // 2. Visual feedback (Change button text to show it's "thinking")
-    btn.innerHTML = "Analyzing Your Tech Stack...";
-    btn.style.opacity = "0.7";
+    const revealArea = document.getElementById('score-reveal');
+    const scoreNum = document.getElementById('final-number');
+    const tagline = document.getElementById('score-tagline');
+    const btn = document.getElementById('audit-btn');
 
-    // 3. Small delay for "Expert" feel, then Redirect
-    setTimeout(function() {
-        if (score <= 2) {
-            window.location.href = "/manual-operator-fix/";
-        } else if (score <= 5) {
-            window.location.href = "/tech-host-blueprint/";
-        } else {
-            window.location.href = "/advanced-automation/";
-        }
-    }, 600); 
+    // 2. Reveal the score box
+    scoreNum.innerText = score;
+    revealArea.style.display = 'block';
+
+    // 3. Set a custom message so they know what the score means
+    if (score <= 2) {
+        tagline.innerText = "Status: Manual Operator (Needs Automation)";
+        tagline.style.color = "#d32f2f"; // Red
+    } else if (score <= 5) {
+        tagline.innerText = "Status: Emerging Tech Host (On the Right Track!)";
+        tagline.style.color = "#f57c00"; // Orange
+    } else {
+        tagline.innerText = "Status: Technical Host (Elite Systems!)";
+        tagline.style.color = "#388e3c"; // Green
+    }
+
+    // 4. Transform the button into the "Redirector"
+    btn.innerHTML = "Unlock My Custom Roadmap →";
+    btn.style.background = "#0070f3"; // Blue to grab attention
+    
+    // 5. Change what happens when they click the button a SECOND time
+    btn.onclick = function() {
+        btn.innerHTML = "Opening Your Roadmap...";
+        setTimeout(function() {
+            if (score <= 2) {
+                window.location.href = "/manual-operator-fix/";
+            } else if (score <= 5) {
+                window.location.href = "/tech-host-blueprint/";
+            } else {
+                window.location.href = "/advanced-automation/";
+            }
+        }, 400);
+    };
 }
 </script>
 ---
