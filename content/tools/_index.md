@@ -109,11 +109,12 @@ Stop the late-night calls. Fill in your property details to generate a custom la
 <div style="background:#fff; border:1px solid #eee; border-radius:16px; padding:20px; box-shadow:0 10px 25px rgba(0,0,0,0.05);">
 <h3 style="margin:0 0 15px 0; font-size:1.1rem; text-align:center;">Property Quick-Access</h3>
 
-<div style="display:flex; flex-direction:column; gap:12px;">
-<input type="text" id="v-wifi" placeholder="📶 WiFi Name & Password" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
-<input type="text" id="v-token" placeholder="💡 Electricity Token #" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
-<input type="text" id="v-acc" placeholder="🆔 WiFi Account / Circuit ID" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
-<input type="text" id="v-checkout" placeholder="🕚 Checkout Time" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<div style="display:flex; flex-direction:column; gap:10px;">
+<input type="text" id="v-wifi" placeholder="📶 WiFi Name & Password" style="width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-provider" placeholder="📞 WiFi Provider (e.g. Safaricom/Zuku)" style="width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-token" placeholder="💡 Electricity Token / Meter #" style="width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-checkout" placeholder="🕚 Checkout Time (e.g. 10:00 AM)" style="width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-food" placeholder="🍕 Top Restaurant / Emergency No." style="width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
 <button onclick="generateGuestLink()" style="background:#000; color:#fff; padding:14px; border:none; border-radius:8px; font-weight:bold; cursor:pointer; transition:0.2s;">Create Welcome QR</button>
 </div>
 
@@ -154,33 +155,29 @@ function calculateAudit() {
 function generateGuestLink() {
     const data = {
         w: document.getElementById('v-wifi').value,
-        t: document.getElementById('v-token').value,
         p: document.getElementById('v-provider').value,
-        a: document.getElementById('v-acc').value,
+        t: document.getElementById('v-token').value,
         c: document.getElementById('v-checkout').value,
         f: document.getElementById('v-food').value
     };
     
-    // Base64 encode the JSON data
     const encodedData = btoa(JSON.stringify(data));
     const guestURL = window.location.origin + "/guest-view/?data=" + encodedData;
     
-    // Generate QR
     const qr = new QRious({
         element: document.getElementById('qr-code-final'),
-        size: 220,
+        size: 200,
         value: guestURL,
         level: 'H'
     });
     
     document.getElementById('guest-link-display').innerText = guestURL;
     document.getElementById('qr-result-area').style.display = 'block';
-    document.getElementById('qr-result-area').scrollIntoView({ behavior: 'smooth' });
 }
 
 function copyGuestLink() {
     const text = document.getElementById('guest-link-display').innerText;
     navigator.clipboard.writeText(text);
-    alert("Guest link copied!");
+    alert("Link copied to clipboard!");
 }
 </script>
