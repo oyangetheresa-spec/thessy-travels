@@ -100,22 +100,18 @@ function runAudit() {
 </script>
 ---
 
-## 📊 Technical Tools & ROI Calculators {#yield}
+## 📱 Guest Experience Tools {#qr-tool}
 
-### **The STR Yield & Fee Optimizer** Most hosts ignore the "Complexity Tax"—the hidden cost of API fees and manual labor. 
-> **The Formula:** $$Net\ Yield = Revenue - (Cleaning + Software\ Fees + Manual\ Labor\ Hours \times Hourly\ Rate)$$
+### **The Zero-Question QR Generator**
+Stop the "FAQ Loop." Generate a QR code for your welcome sign that points guests directly to your Wi-Fi info, check-out instructions, or digital guidebook.
 
-[Launch Full Calculator (Internal Link) →](#)
-
-<div class="tool-card" id="cleaning">
-    <h3>Cleaning Margin Checker</h3>
-    <p>Calculate if your cleaning fee covers the "Hidden Costs" (Admin + Laundry + Supplies).</p>
-    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 300px;">
-        <input type="number" id="c-fee" placeholder="Guest Cleaning Fee ($)">
-        <input type="number" id="c-cost" placeholder="Paid to Cleaner ($)">
-        <button onclick="calcCleaning()" class="btn-primary">Check Margins</button>
-        <p id="c-result" style="font-weight: bold;"></p>
-    </div>
+<div class="tool-card" style="text-align: center;">
+    <p>Paste your Guidebook URL or Wi-Fi Landing Page link below:</p>
+    <input type="text" id="qr-input" placeholder="https://your-guide-link.com" 
+           style="width: 100%; max-width: 400px; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
+    <br>
+    <canvas id="qr-code" style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px;"></canvas>
+    <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Right-click the QR code to "Save Image" and print it for your welcome sign.</p>
 </div>
 
 <script>
@@ -141,12 +137,16 @@ function calculateAudit() {
     }
 }
 
-function calcCleaning() {
-    const fee = document.getElementById('c-fee').value;
-    const cost = document.getElementById('c-cost').value;
-    const margin = fee - cost;
-    const res = document.getElementById('c-result');
-    if(margin <= 0) res.innerHTML = "⚠️ You are losing money on turnovers!";
-    else res.innerHTML = "✅ Your margin is $" + margin + " per stay.";
-}
+// --- 2. QR Generator Logic ---
+(function() {
+    const qr = new QRious({
+        element: document.getElementById('qr-code'),
+        size: 200,
+        value: 'https://the-technical-host.com' 
+    });
+
+    document.getElementById('qr-input').addEventListener('input', (e) => {
+        qr.value = e.target.value || 'https://the-technical-host.com';
+    });
+})();
 </script>
