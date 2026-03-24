@@ -105,38 +105,27 @@ function runAudit() {
 ## 📱 Instant Guest Welcome Sign Generator
 Stop the late-night calls. Fill in your property details to generate a custom landing page for your guests.
 
-<<div class="tool-card" style="max-width: 500px; margin: 0 auto; background: #fafafa; border: 2px solid #000; padding: 20px;">
-<div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 8px; align-items: center; text-align: left;">
-<label style="font-size: 0.85rem;">📶 WiFi Info</label>
-<input type="text" id="v-wifi" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Name / Pass">
+<div style="max-width:400px; margin:20px auto; font-family:sans-serif;">
+<div style="background:#fff; border:1px solid #eee; border-radius:16px; padding:20px; box-shadow:0 10px 25px rgba(0,0,0,0.05);">
+<h3 style="margin:0 0 15px 0; font-size:1.1rem; text-align:center;">Property Quick-Access</h3>
 
-<label style="font-size: 0.85rem;">💡 Meter #</label>
-<input type="text" id="v-token" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Token #">
-
-<label style="font-size: 0.85rem;">📞 Provider</label>
-<input type="text" id="v-provider" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Safaricom/Zuku">
-
-<label style="font-size: 0.85rem;">🆔 Account #</label>
-<input type="text" id="v-acc" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Circuit ID">
-
-<label style="font-size: 0.85rem;">🕚 Checkout</label>
-<input type="text" id="v-checkout" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="10:00 AM">
-
-<label style="font-size: 0.85rem;">🍕 Local Info</label>
-<input type="text" id="v-food" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Food/Help">
+<div style="display:flex; flex-direction:column; gap:12px;">
+<input type="text" id="v-wifi" placeholder="📶 WiFi Name & Password" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-token" placeholder="💡 Electricity Token #" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-acc" placeholder="🆔 WiFi Account / Circuit ID" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<input type="text" id="v-checkout" placeholder="🕚 Checkout Time" style="width:100%; padding:12px; border:1px solid #e0e0e0; border-radius:8px; box-sizing:border-box;">
+<button onclick="generateGuestLink()" style="background:#000; color:#fff; padding:14px; border:none; border-radius:8px; font-weight:bold; cursor:pointer; transition:0.2s;">Create Welcome QR</button>
 </div>
 
-<button onclick="generateGuestLink()" class="btn-primary" style="margin-top: 15px; background: #0070f3; width: 100%; padding: 12px;">Generate My Guest QR Code</button>
-
-<div id="qr-result-area" style="display:none; margin-top:20px; padding-top:15px; border-top: 1px dashed #ccc; text-align: center;">
-<h4 style="margin-bottom:10px; font-size: 1rem;">✅ QR Code Ready!</h4>
-<canvas id="qr-code-final" style="max-width: 180px;"></canvas>
-<div style="background: #eee; padding: 8px; border-radius: 5px; word-break: break-all; font-size: 0.65rem; margin: 10px 0; text-align: left;" id="guest-link-display"></div>
-<button onclick="copyGuestLink()" class="btn-primary" style="font-size:0.75rem; padding: 6px; background: #333;">Copy Link</button>
+<div id="qr-result-area" style="display:none; text-align:center; margin-top:20px; border-top:1px solid #eee; padding-top:20px;">
+<canvas id="qr-code-final" style="max-width:150px; margin-bottom:10px;"></canvas>
+<p style="font-size:0.75rem; color:#666;">Ready! Copy the link for your guest:</p>
+<div id="guest-link-display" style="background:#f8f8f8; padding:8px; border-radius:6px; font-size:0.7rem; word-break:break-all; margin-bottom:10px; color:#333;"></div>
+<button onclick="copyGuestLink()" style="background:#eee; border:none; padding:8px 15px; border-radius:6px; font-size:0.8rem; cursor:pointer;">Copy Link</button>
+</div>
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-
 
 <script>
 function calculateAudit() {
