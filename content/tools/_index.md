@@ -119,7 +119,6 @@ Stop the late-night calls. Fill in your property details to generate a custom la
         <input type="text" id="v-checkout" class="input-field" placeholder="e.g. 10:00 AM Sharp">
         <label>🍕 Local Food / Emergency Contacts</label>
         <input type="text" id="v-food" class="input-field" placeholder="e.g. Mama Rocks: 0712... / Pharmacy: 0722...">
-        
         <button onclick="generateGuestLink()" class="btn-primary" style="background: #0070f3;">Generate My Guest QR Code</button>
     </div>
 
