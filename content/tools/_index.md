@@ -105,33 +105,36 @@ function runAudit() {
 ## 📱 Instant Guest Welcome Sign Generator
 Stop the late-night calls. Fill in your property details to generate a custom landing page for your guests.
 
-<div class="tool-card" style="background: #fafafa; border: 2px solid #000;">
-    <div style="display: grid; gap: 10px; text-align: left;">
-        <label>📶 WiFi Name & Password</label>
-        <input type="text" id="v-wifi" class="input-field" placeholder="e.g. Karibu_Guest / Pass1234">
-        <label>💡 Electricity Token Meter #</label>
-        <input type="text" id="v-token" class="input-field" placeholder="e.g. 4501 2233 4455">
-        <label>📞 WiFi Provider (e.g. Safaricom/Zuku)</label>
-        <input type="text" id="v-provider" class="input-field" placeholder="e.g. Safaricom Home Fibre">
-        <label>🆔 WiFi Account # / Circuit ID</label>
-        <input type="text" id="v-acc" class="input-field" placeholder="e.g. 12345678 (For easy USSD checks)">
-        <label>🕚 Checkout Time</label>
-        <input type="text" id="v-checkout" class="input-field" placeholder="e.g. 10:00 AM Sharp">
-        <label>🍕 Local Food / Emergency Contacts</label>
-        <input type="text" id="v-food" class="input-field" placeholder="e.g. Mama Rocks: 0712... / Pharmacy: 0722...">
-        <button onclick="generateGuestLink()" class="btn-primary" style="background: #0070f3;">Generate My Guest QR Code</button>
-    </div>
-    <div id="qr-result-area" style="display:none; margin-top:30px; padding-top:20px; border-top: 2px dashed #ccc; text-align: center;">
-        <h4 style="margin-bottom:10px;">✅ Your Custom QR Code is Ready!</h4>
-        <canvas id="qr-code-final"></canvas>
-        <p style="font-size: 0.8rem; color: #666; margin: 15px 0;">Scan this with your phone to test, then print it for your unit.</p>
-        
-        <p style="font-size: 0.75rem; text-align: left;"><strong>Direct Guest Link:</strong></p>
-        <div style="background: #eee; padding: 10px; border-radius: 5px; word-break: break-all; font-size: 0.7rem; margin-bottom: 10px; text-align: left;" id="guest-link-display"></div>
-        <button onclick="copyGuestLink()" class="btn-primary" style="font-size:0.8rem; padding: 8px;">Copy Link</button>
-    </div>
+<<div class="tool-card" style="max-width: 500px; margin: 0 auto; background: #fafafa; border: 2px solid #000; padding: 20px;">
+<div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 8px; align-items: center; text-align: left;">
+<label style="font-size: 0.85rem;">📶 WiFi Info</label>
+<input type="text" id="v-wifi" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Name / Pass">
+
+<label style="font-size: 0.85rem;">💡 Meter #</label>
+<input type="text" id="v-token" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Token #">
+
+<label style="font-size: 0.85rem;">📞 Provider</label>
+<input type="text" id="v-provider" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Safaricom/Zuku">
+
+<label style="font-size: 0.85rem;">🆔 Account #</label>
+<input type="text" id="v-acc" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Circuit ID">
+
+<label style="font-size: 0.85rem;">🕚 Checkout</label>
+<input type="text" id="v-checkout" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="10:00 AM">
+
+<label style="font-size: 0.85rem;">🍕 Local Info</label>
+<input type="text" id="v-food" class="input-field" style="margin-bottom:0; padding: 8px;" placeholder="Food/Help">
 </div>
 
+<button onclick="generateGuestLink()" class="btn-primary" style="margin-top: 15px; background: #0070f3; width: 100%; padding: 12px;">Generate My Guest QR Code</button>
+
+<div id="qr-result-area" style="display:none; margin-top:20px; padding-top:15px; border-top: 1px dashed #ccc; text-align: center;">
+<h4 style="margin-bottom:10px; font-size: 1rem;">✅ QR Code Ready!</h4>
+<canvas id="qr-code-final" style="max-width: 180px;"></canvas>
+<div style="background: #eee; padding: 8px; border-radius: 5px; word-break: break-all; font-size: 0.65rem; margin: 10px 0; text-align: left;" id="guest-link-display"></div>
+<button onclick="copyGuestLink()" class="btn-primary" style="font-size:0.75rem; padding: 6px; background: #333;">Copy Link</button>
+</div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 
 
