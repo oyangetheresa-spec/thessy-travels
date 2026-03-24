@@ -7,30 +7,30 @@ layout: "single"
     <h2 style="margin-top:0; text-align:center;">Karibu Nyumbani! 🇰🇪</h2>
     <p style="text-align:center; color:#666; font-size:0.9rem;">Everything you need for a 5-star stay.</p>
 
-    <div style="display:grid; gap:20px; margin-top:25px;">
-        <div style="padding:15px; background:#f0f7ff; border-radius:12px;">
-            <strong style="display:block; color:#0070f3; margin-bottom:5px;">📶 WiFi Access</strong>
-            <span id="g-wifi" style="font-size:1.1rem; font-weight:bold;">---</span>
-            <div style="margin-top:10px; font-size:0.85rem; color:#555;">
-                <strong>Provider:</strong> <span id="g-provider">---</span>
-            </div>
-        </div>
-
-        <div style="padding:15px; background:#fff9e6; border-radius:12px;">
-            <strong style="display:block; color:#b8860b; margin-bottom:5px;">💡 Electricity Token</strong>
-            <span id="g-token" style="font-size:1.1rem; font-weight:bold; letter-spacing:1px;">---</span>
-        </div>
-
-        <div style="padding:15px; background:#f4f4f4; border-radius:12px;">
-            <strong style="display:block; color:#333; margin-bottom:5px;">🕚 Checkout Time</strong>
-            <span id="g-checkout" style="font-size:1.1rem; font-weight:bold;">---</span>
-        </div>
-
-        <div style="padding:15px; border:1px dashed #ddd; border-radius:12px;">
-            <strong style="display:block; color:#d32f2f; margin-bottom:5px;">🍕 Local Recommendations</strong>
-            <span id="g-food" style="font-size:0.9rem; line-height:1.4;">---</span>
+<div style="display:grid; gap:20px; margin-top:25px;">
+    <div style="padding:15px; background:#f0f7ff; border-radius:12px;">
+        <strong style="display:block; color:#0070f3; margin-bottom:5px;">📶 WiFi Access</strong>
+        <span id="g-wifi" style="font-size:1.1rem; font-weight:bold;">---</span>
+        <div style="margin-top:10px; font-size:0.85rem; color:#555;">
+            <strong>Provider:</strong> <span id="g-provider">---</span>
         </div>
     </div>
+
+    <div style="padding:15px; background:#fff9e6; border-radius:12px;">
+        <strong style="display:block; color:#b8860b; margin-bottom:5px;">💡 Electricity Token</strong>
+        <span id="g-token" style="font-size:1.1rem; font-weight:bold; letter-spacing:1px;">---</span>
+    </div>
+
+    <div style="padding:15px; background:#f4f4f4; border-radius:12px;">
+        <strong style="display:block; color:#333; margin-bottom:5px;">🕚 Checkout Time</strong>
+        <span id="g-checkout" style="font-size:1.1rem; font-weight:bold;">---</span>
+    </div>
+
+    <div style="padding:15px; border:1px dashed #ddd; border-radius:12px;">
+        <strong style="display:block; color:#d32f2f; margin-bottom:5px;">🍕 Local Recommendations</strong>
+        <span id="g-food" style="font-size:0.9rem; line-height:1.4;">---</span>
+    </div>
+</div>
 </div>
 
 <script>
