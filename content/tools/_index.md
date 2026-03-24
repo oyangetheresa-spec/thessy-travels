@@ -106,7 +106,7 @@ function runAudit() {
 Stop the late-night calls. Fill in your property details to generate a custom landing page for your guests.
 
 <div class="tool-card" style="background: #fafafa; border: 2px solid #000;">
-    <div style="text-align: left;">
+    <div style="display: grid; gap: 10px; text-align: left;">
         <label>📶 WiFi Name & Password</label>
         <input type="text" id="v-wifi" class="input-field" placeholder="e.g. Karibu_Guest / Pass1234">
         <label>💡 Electricity Token Meter #</label>
@@ -121,7 +121,6 @@ Stop the late-night calls. Fill in your property details to generate a custom la
         <input type="text" id="v-food" class="input-field" placeholder="e.g. Mama Rocks: 0712... / Pharmacy: 0722...">
         <button onclick="generateGuestLink()" class="btn-primary" style="background: #0070f3;">Generate My Guest QR Code</button>
     </div>
-
     <div id="qr-result-area" style="display:none; margin-top:30px; padding-top:20px; border-top: 2px dashed #ccc; text-align: center;">
         <h4 style="margin-bottom:10px;">✅ Your Custom QR Code is Ready!</h4>
         <canvas id="qr-code-final"></canvas>
