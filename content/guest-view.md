@@ -14,19 +14,19 @@ layout: "single"
         <div style="margin-top:10px; font-size:0.85rem; color:#555;">
             <strong>Provider:</strong> <span id="g-provider">---</span>
         </div>
-    </div>
-    <div style="padding:15px; background:#fff9e6; border-radius:12px;">
-        <strong style="display:block; color:#b8860b; margin-bottom:5px;">💡 Electricity Token</strong>
-        <span id="g-token" style="font-size:1.1rem; font-weight:bold; letter-spacing:1px;">---</span>
-    </div>
-    <div style="padding:15px; background:#f4f4f4; border-radius:12px;">
-        <strong style="display:block; color:#333; margin-bottom:5px;">🕚 Checkout Time</strong>
-        <span id="g-checkout" style="font-size:1.1rem; font-weight:bold;">---</span>
-    </div>
-    <div style="padding:15px; border:1px dashed #ddd; border-radius:12px;">
-        <strong style="display:block; color:#d32f2f; margin-bottom:5px;">🍕 Local Recommendations</strong>
-        <span id="g-food" style="font-size:0.9rem; line-height:1.4;">---</span>
-    </div>
+</div>
+<div style="padding:15px; background:#fff9e6; border-radius:12px;">
+    <strong style="display:block; color:#b8860b; margin-bottom:5px;">💡 Electricity Token</strong>
+    <span id="g-token" style="font-size:1.1rem; font-weight:bold; letter-spacing:1px;">---</span>
+</div>
+<div style="padding:15px; background:#f4f4f4; border-radius:12px;">
+    <strong style="display:block; color:#333; margin-bottom:5px;">🕚 Checkout Time</strong>
+    <span id="g-checkout" style="font-size:1.1rem; font-weight:bold;">---</span>
+</div>
+<div style="padding:15px; border:1px dashed #ddd; border-radius:12px;">
+    <strong style="display:block; color:#d32f2f; margin-bottom:5px;">🍕 Local Recommendations</strong>
+    <span id="g-food" style="font-size:0.9rem; line-height:1.4;">---</span>
+</div>
 </div>
 </div>
 
