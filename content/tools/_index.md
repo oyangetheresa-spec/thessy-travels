@@ -109,19 +109,14 @@ Stop the late-night calls. Fill in your property details to generate a custom la
     <div style="text-align: left;">
         <label>📶 WiFi Name & Password</label>
         <input type="text" id="v-wifi" class="input-field" placeholder="e.g. Karibu_Guest / Pass1234">
-
         <label>💡 Electricity Token Meter #</label>
         <input type="text" id="v-token" class="input-field" placeholder="e.g. 4501 2233 4455">
-
         <label>📞 WiFi Provider (e.g. Safaricom/Zuku)</label>
         <input type="text" id="v-provider" class="input-field" placeholder="e.g. Safaricom Home Fibre">
-
         <label>🆔 WiFi Account # / Circuit ID</label>
         <input type="text" id="v-acc" class="input-field" placeholder="e.g. 12345678 (For easy USSD checks)">
-
         <label>🕚 Checkout Time</label>
         <input type="text" id="v-checkout" class="input-field" placeholder="e.g. 10:00 AM Sharp">
-
         <label>🍕 Local Food / Emergency Contacts</label>
         <input type="text" id="v-food" class="input-field" placeholder="e.g. Mama Rocks: 0712... / Pharmacy: 0722...">
         
