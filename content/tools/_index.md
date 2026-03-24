@@ -101,7 +101,6 @@ function runAudit() {
     };
 }
 </script>
----
 
 ## 📱 Instant Guest Welcome Sign Generator
 Stop the late-night calls. Fill in your property details to generate a custom landing page for your guests.
