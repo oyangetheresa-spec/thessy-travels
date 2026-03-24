@@ -100,18 +100,60 @@ function runAudit() {
 </script>
 ---
 
-## 📱 Guest Experience Tools {#qr-tool}
+title: "Airbnb Automation Tools & QR Generator"
+description: "Free tools for data-driven hosts. Generate your guest welcome signs and audit your tech stack."
+layout: "list"
+---
 
-### **The Zero-Question QR Generator**
-Stop the "FAQ Loop." Generate a QR code for your welcome sign that points guests directly to your Wi-Fi info, check-out instructions, or digital guidebook.
+<style>
+    :root { --brand-black: #000; --brand-gray: #f4f4f4; --brand-accent: #0070f3; }
+    .tool-card { border: 1px solid #ddd; padding: 25px; border-radius: 12px; margin-bottom: 25px; background: #fff; transition: 0.3s; }
+    .tool-card:hover { border-color: var(--brand-black); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .btn-primary { background: var(--brand-black); color: #fff !important; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: bold; border: none; cursor: pointer; text-align: center;}
+    .input-field { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 10px; font-family: inherit; }
+    label { font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 5px; text-align: left; }
+</style>
 
-<div class="tool-card" style="text-align: center;">
-    <p>Paste your Guidebook URL or Wi-Fi Landing Page link below:</p>
-    <input type="text" id="qr-input" placeholder="https://your-guide-link.com" 
-           style="width: 100%; max-width: 400px; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
-    <br>
-    <canvas id="qr-code" style="background: #fff; padding: 10px; border: 1px solid #eee; border-radius: 8px;"></canvas>
-    <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Right-click the QR code to "Save Image" and print it for your welcome sign.</p>
+# The Airbnb Automation Toolkit
+#### *Updated: March 2026 • Curated by The Technical Host*
+
+---
+
+## 📱 Instant Guest Welcome Sign Generator
+Stop the late-night calls. Fill in your property details below to generate a unique QR code for your welcome sign.
+
+<div class="tool-card" style="max-width: 600px; margin: 0 auto; background: #fafafa; border: 2px solid #000;">
+    <div style="display: grid; gap: 5px;">
+        <label>📶 WiFi Name & Password</label>
+        <input type="text" id="v-wifi" class="input-field" placeholder="e.g. Karibu_Guest / Pass1234">
+
+        <label>💡 Electricity Token Meter #</label>
+        <input type="text" id="v-token" class="input-field" placeholder="e.g. 4501 2233 4455">
+
+        <label>📞 WiFi Provider (e.g. Safaricom/Zuku)</label>
+        <input type="text" id="v-provider" class="input-field" placeholder="e.g. Safaricom Home Fibre">
+
+        <label>🆔 WiFi Account # / Circuit ID</label>
+        <input type="text" id="v-acc" class="input-field" placeholder="e.g. 12345678 (For easy USSD checks)">
+
+        <label>🕚 Checkout Time</label>
+        <input type="text" id="v-checkout" class="input-field" placeholder="e.g. 10:00 AM Sharp">
+
+        <label>🍕 Local Food / Emergency Contacts</label>
+        <input type="text" id="v-food" class="input-field" placeholder="e.g. Mama Rocks: 0712... / Pharmacy: 0722...">
+        
+        <button onclick="generateGuestLink()" class="btn-primary" style="margin-top: 15px; background: #0070f3; width: 100%;">Generate My Guest QR Code</button>
+    </div>
+
+    <div id="qr-result-area" style="display:none; margin-top:30px; padding-top:20px; border-top: 2px dashed #ccc;">
+        <h4 style="margin-bottom:10px;">✅ Your Custom QR Code is Ready!</h4>
+        <canvas id="qr-code-final"></canvas>
+        <p style="font-size: 0.8rem; color: #666; margin: 15px 0;">Right-click the QR code to "Save Image" and print it for your unit.</p>
+        
+        <p style="font-size: 0.75rem;"><strong>Direct Guest Link:</strong></p>
+        <div style="background: #eee; padding: 10px; border-radius: 5px; word-break: break-all; font-size: 0.7rem; margin-bottom: 10px;" id="guest-link-display"></div>
+        <button onclick="copyGuestLink()" style="font-size:0.7rem; cursor:pointer; padding: 5px 10px;">Copy Link</button>
+    </div>
 </div>
 
 <script>
@@ -137,16 +179,40 @@ function calculateAudit() {
     }
 }
 
-// --- 2. QR Generator Logic ---
-(function() {
+function generateGuestLink() {
+    const data = {
+        w: document.getElementById('v-wifi').value,
+        t: document.getElementById('v-token').value,
+        p: document.getElementById('v-provider').value,
+        a: document.getElementById('v-acc').value, // NEW: Account Number
+        c: document.getElementById('v-checkout').value,
+        f: document.getElementById('v-food').value
+    };
+    
+    // Convert data to a Base64 string for the URL
+    const encodedData = btoa(JSON.stringify(data));
+    
+    // IMPORTANT: Ensure this URL matches your actual domain structure
+    const guestURL = window.location.origin + "/guest-view/?data=" + encodedData;
+    
+    // Create the QR Code
     const qr = new QRious({
-        element: document.getElementById('qr-code'),
-        size: 200,
-        value: 'https://the-technical-host.com' 
+        element: document.getElementById('qr-code-final'),
+        size: 220,
+        value: guestURL,
+        level: 'H' // High error correction for better scanning
     });
+    
+    document.getElementById('guest-link-display').innerText = guestURL;
+    document.getElementById('qr-result-area').style.display = 'block';
+    
+    // Smooth scroll to the result
+    document.getElementById('qr-result-area').scrollIntoView({ behavior: 'smooth' });
+}
 
-    document.getElementById('qr-input').addEventListener('input', (e) => {
-        qr.value = e.target.value || 'https://the-technical-host.com';
-    });
-})();
+function copyGuestLink() {
+    const text = document.getElementById('guest-link-display').innerText;
+    navigator.clipboard.writeText(text);
+    alert("Guest link copied! You can now send this via WhatsApp to your arriving guests.");
+}
 </script>
