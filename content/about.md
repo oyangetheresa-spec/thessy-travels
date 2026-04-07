@@ -3,12 +3,18 @@ title: "Engineering the Guest Experience"
 layout: "single"
 description: "Why 'The Technical Host' is the future of short-term rental management."
 ---
-<div style="text-align: center; margin-bottom: 20px;">
-  <img src="https://thessy-travels.pages.dev/images/theresa.jpeg" 
-       alt="Theresa Oyange" 
-       style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #0070f3; display: block; margin: 0 auto;">
-  <h2 style="margin-top: 10px; color: #333;">Theresa Oyange</h2>
-  <p style="font-style: italic; color: #666;">The Technical Host</p>
+<div class="author-card">
+  <img src="https://thessy-travels.pages.dev/images/theresa.jpeg"
+       alt="Theresa Aoko Oyange"
+       class="author-photo">
+  <h2>Theresa Aoko Oyange</h2>
+  <p class="author-title">Host, researcher, and short-term rental systems advocate</p>
+  <p class="author-bio">
+    Hosting since 2020 with an anthropology degree that helps me understand guest behavior. I research hospitality technology, build practical tools for hosts, and recommend systems that reduce work and improve profitability.
+  </p>
+  <p class="trust-signal">
+    I’ve supported small rental teams with website optimization, Google Business Profile setup, and marketing. I’ve also created two free host tools: a QR info generator and a guest experience performance guide.
+  </p>
 </div>
 
 # 🚀 The Technical Host Manifesto
