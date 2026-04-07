@@ -6,7 +6,8 @@ description: "Why 'The Technical Host' is the future of short-term rental manage
 <div class="author-card">
   <img src="https://thessy-travels.pages.dev/images/theresa.jpeg"
        alt="Theresa Aoko Oyange"
-       class="author-photo">
+       class="author-photo"
+       style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
   <h2>Theresa Aoko Oyange</h2>
   <p class="author-title">Host, researcher, and short-term rental systems advocate</p>
   <p class="author-bio">

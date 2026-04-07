@@ -37,3 +37,19 @@
     font-weight: bold;
   }
 }
+
+/* Author card styling for sleek layout */
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Author photo styling - circular profile */
+.author-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
