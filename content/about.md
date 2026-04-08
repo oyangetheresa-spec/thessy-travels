@@ -14,26 +14,33 @@ description: "Why 'The Technical Host' is the future of short-term rental manage
     Having managed two rental units since 2020, with an **anthropology degree**, I deeply understand guest behavior. As a researcher in **hospitality technology**, I build and recommend practical tools that reduce work and improve profitability.
   </p>
   <p class="trust-signal">
-    I've supported 10 rental units with website optimization, Google Business Profile setup, and marketing—securing clients via social media and increasing enquiries. I've also created two **free host tools**: a QR info generator and a guest experience performance guide.
+    I've supported 10 rental units with website optimization, Google Business Profile setup, and marketing, securing clients via social media and increasing enquiries. I've also created two **free host tools**: a QR info generator and a guest experience performance guide.
   </p>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Theresa Aoko Oyange",
+  "jobTitle": "Host, Researcher, and Short-term Rental Systems Advocate",
+  "description": "Having managed two rental units since 2020 with an anthropology degree, I research hospitality technology and build practical tools that improve property profitability.",
+  "image": "https://thessy-travels.pages.dev/images/theresa.jpeg",
+  "url": "https://thessy-travels.pages.dev/about/",
+  "sameAs": [
+    "https://www.linkedin.com/in/theresa-aoko-oyange"
+  ],
+  "knowsAbout": ["hospitality technology", "short-term rental management", "PMS architecture", "dynamic pricing", "guest experience optimization"]
+}
+</script>
 
-# 🚀 The Technical Host Manifesto
+## The Technical Host: Systems Over Hospitality
 
-Most property managers focus on **Hospitality**.  
-I focus on **Systems**.
+Most hosts focus on **hospitality**. I focus on **systems**. As a host since 2020, I experienced the exhaustion of manual scheduling and 2 AM messages—that's why I shifted toward engineering. I realized most hosting headaches are **efficiency problems**, not hospitality problems.
 
-In an era of rising fees and saturated markets, "being a good host" is no longer enough. To win in 2026, you need a business that runs on **Logic, Automation, and Data.**
+In 2026's competitive market, success requires **logic, automation, and data**. I help modern hosts bridge human hospitality and high-performance systems, turning properties into financial assets.
 
 ---
-
-### 🏠 Built in the Trenches
-I didn’t just learn this from a manual. **I started this journey as a host.** I know the exhaustion of 2:00 AM guest messages and the chaos of manual scheduling. 
-
-That "hustle" is exactly why I shifted toward engineering. I realized that most hosting headaches aren't hospitality problems they are **efficiency problems.** I’m here to bridge the gap between human hospitality and high-performance systems.
-
----
-### 🛠️ The Competitive Edge
+### The Competitive Edge
 Here is the difference between a standard host and a **Technical Host**:
 
 | Feature | The Standard Host | The Technical Host |
@@ -45,14 +52,14 @@ Here is the difference between a standard host and a **Technical Host**:
 
 ---
 
-### 🧠 My Core Philosophy: "The 2-Hour Rule"
+### My Core Philosophy: The 2-Hour Rule
 > **If a task happens twice, it must be scripted. If it happens three times, it must be automated.**
 
 I help modern hosts move away from the "hustle" and toward **High-Yield Automation**. My goal is to build properties that don't just provide a stay, but operate as high-performance financial assets.
 
 ---
 
-### 💻 The Tech Stack I Trust
+### The Tech Stack I Trust
 To achieve a "Hands-Off" 20% increase in ROI, I specialize in integrating:
 
 * **PMS Architecture:** Building the "Central Nervous System" of your business.
@@ -62,7 +69,7 @@ To achieve a "Hands-Off" 20% increase in ROI, I specialize in integrating:
 
 ---
 
-### 🤝 Let’s Build the Future
+### Let's Build the Future
 The Technical Host isn't just about software it's about **freedom**. Freedom from the manual labor of hosting, and the financial freedom that comes from a perfectly optimized system.
 
 [**View My Current Software Stack**](/software/) | [**Get in Touch**](/contact/)
