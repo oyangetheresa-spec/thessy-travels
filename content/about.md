@@ -49,7 +49,7 @@ This site is built for hosts who want lean systems, tool-driven recommendations,
 
 ## Why This Matters
 
-I started hosting because I cared about guest experience. I stayed because I wanted to solve the inefficiencies behind the scenes. Most hosting problems are not hospitality problems—they are systems problems.
+I started hosting because I cared about guest experience. I stayed because I wanted to solve the inefficiencies behind the scenes. Most hosting problems are not hospitality problems, they are systems problems.
 
 The tools I recommend are chosen to save time, reduce errors, and improve revenue for short-term rental operators. If you want guidance that comes from both hosting and product research, this page is for you.
 
