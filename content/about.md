@@ -11,10 +11,10 @@ description: "Why 'The Technical Host' is the future of short-term rental manage
   <h2>Theresa Aoko Oyange</h2>
   <p class="author-title">Host, researcher, and short-term rental systems advocate</p>
   <p class="author-bio">
-    Hosting since 2020 with an anthropology degree that helps me understand guest behavior. I research hospitality technology, build practical tools for hosts, and recommend systems that reduce work and improve profitability.
+    Having managed two rental units since 2020, with an **anthropology degree**, I deeply understand guest behavior. As a researcher in **hospitality technology**, I build and recommend practical tools that reduce work and improve profitability.
   </p>
   <p class="trust-signal">
-    I’ve supported small rental teams with website optimization, Google Business Profile setup, and marketing. I’ve also created two free host tools: a QR info generator and a guest experience performance guide.
+    I've supported 10 rental units with website optimization, Google Business Profile setup, and marketing—securing clients via social media and increasing enquiries. I've also created two **free host tools**: a QR info generator and a guest experience performance guide.
   </p>
 </div>
 
