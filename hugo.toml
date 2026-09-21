@@ -47,41 +47,24 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
-# --- 7. Optimized Navigation ---
+
 [menu]
   [[menu.main]]
     name = "Home"
     url = "/"
     weight = 10
-  [[menu.main]]
-    name = "Search"
-    url = "/search/"
-    weight = 15
-  [[menu.main]]
-    name = "Software"
-    url = "/software/"
-    weight = 20
-  [[menu.main]]
-    name = "Smart Tech"
-    url = "/smart-tech/"
-    weight = 30
-  [[menu.main]]
+ [[menu.main]]
     name = "Tools"
     url = "/tools/"
-    weight = 40
-    [[menu.main]]
+    weight = 20
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 50
-
+    weight = 30
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 60
-
-  [[menu.main]]
-    name = "Privacy"
-    url = "/privacy/"
-    weight = 70
+    weight = 40
+    
 [markup.goldmark.renderer]
   unsafe = true
