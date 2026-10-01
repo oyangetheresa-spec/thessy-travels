@@ -4,7 +4,7 @@ date: 2026-10-01
 draft: false
 ---
 
-It's Saturday, and there's an event happening nearby — which means every Airbnb host in the area is fully booked. I'd just handed over my units to two guests and was done for the day.
+It's Saturday, and there's an event happening nearby, which means every Airbnb host in the area is fully booked. I'd just handed over my units to two guests and was done for the day.
 
 Then a call came in. A woman wanted to book a unit. I explained we were full. She asked if I had a referral.
 
@@ -14,7 +14,7 @@ She liked it, paid a 1,000 KES deposit, and told me she'd check in at 3pm.
 
 At 4pm, she called. No electricity.
 
-I called the host. He promised to look into it. 7pm came, still no power, and I was starting to panic. Remember, there was an event in town, which meant every other host was fully booked too. I searched for a backup unit anyway and found one — only to find out someone else had paid for it faster than I could confirm it.
+I called the host. He promised to look into it. 7pm came, still no power, and I was starting to panic. Remember, there was an event in town, which meant every other host was fully booked too. I searched for a backup unit anyway and found one, only to find out someone else had paid for it faster than I could confirm it.
 
 So we were back to square one: the unit without power.
 
@@ -26,7 +26,7 @@ I woke up to three messages. She'd come back at 2am to find someone else had alr
 
 Her tone wasn't angry, it was resigned, like she'd already accepted it. That hit harder than anger would have. My first thought wasn't about the booking, it was where did she end up sleeping? She never called me.
 
-I apologized and told her clearly: this didn't reflect who I am as a host. I'd given the referral in good faith, trusting the other host would take care of her the way I would have. I told her I'd get her money back and offer her a discount on her next stay — even though she hadn't asked for either.
+I apologized and told her clearly: this didn't reflect who I am as a host. I'd given the referral in good faith, trusting the other host would take care of her the way I would have. I told her I'd get her money back and offer her a discount on her next stay, even though she hadn't asked for either.
 
 That silence after a guest stops asking for anything is its own kind of warning. It usually means they've already written you off. I didn't want to be remembered that way.
 
@@ -44,6 +44,6 @@ And if you're the guest on the receiving end of a bad referral: it's not a refle
 
 The part I still don't have a clear answer for
 
-A referral is a gamble. You're vouching for someone you don't fully control. And it's tempting to refer the host nobody else wants to deal with, just because you personally haven't had a problem with them yet — only to find out later exactly why everyone else was avoiding them. I don't have a tidy solution to that one. I just know I'm a lot more careful now about who I vouch for.
+A referral is a gamble. You're vouching for someone you don't fully control. And it's tempting to refer the host nobody else wants to deal with, just because you personally haven't had a problem with them yet, only to find out later exactly why everyone else was avoiding them. I don't have a tidy solution to that one. I just know I'm a lot more careful now about who I vouch for.
 
 Have you ever had a referral blow up on you, as the host, or the guest? I'd love to hear how you handled it.
