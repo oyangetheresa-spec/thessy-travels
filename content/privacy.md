@@ -13,4 +13,4 @@ The Technical Host participates in various affiliate programs. If you purchase t
 I don't sell your data. I use minimal, privacy-focused analytics to see which technical guides are most helpful to the community.
 
 ---
-*Last Updated: January 2026*
+*Last Updated: October 2026*
