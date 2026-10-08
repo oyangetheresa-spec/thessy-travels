@@ -30,4 +30,4 @@ A guest who refuses to pay a direct-booking deposit and a guest who abandons the
 
 So I've landed somewhere simple: there isn't a fix. It's a gamble no matter which side of the booking you're standing on.
 
-Have you ever reserved without a deposit and had it backfire — or pay off? I'd be curious how other hosts draw this line.
+Have you ever reserved without a deposit and had it backfire, or pay off? I'd be curious how other hosts draw this line.
