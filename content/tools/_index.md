@@ -31,7 +31,7 @@ keywords: ["Airbnb Automation 2026", "STR Tech Audit", "Guest QR Code Generator"
 
 ---
 
-## 🤖 The 2026 Automation Audit {#audit}
+##  The 2026 Automation Audit {#audit}
 **Is your tech stack costing you money?** Most hosts have "accidental" tech stacks. Check the boxes that apply:
 
 <div id="audit-tool" style="border: 1px solid #ddd; padding: 25px; border-radius: 12px; background: #fff; margin: 20px 0;">
