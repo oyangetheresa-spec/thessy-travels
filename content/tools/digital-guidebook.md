@@ -6,31 +6,39 @@ description: "A free guide to building a digital guest guidebook that answers Wi
 
 # The Digital Guidebook: Answer Guest Questions Before They're Asked
 
-The #1 reason hosts lose time is "The FAQ Loop", answering the same five questions every day. A **Technical Guidebook** solves this by putting the answers in the guest's pocket before they even think to ask.
+The #1 reason hosts lose time is "The FAQ Loop", answering the same five questions every day. A digital guidebook solves this by putting the answers in the guest's pocket before they even think to ask.
 
-### The Tech Stack for Guidebooks
-I recommend using "API-First" platforms that sync directly with your booking calendar:
-* **Hostfully:** The industry standard for professional scaling.
-* **TouchStay:** Best for storytelling and local recommendations.
-* **Hospitable Guide:** The easiest integration if you already use their PMS.
+### Try One Right Now, Free
+
+I built a simple Guest Welcome QR Generator that covers the basics, WiFi, checkout time, and local recommendations, in one shareable link and QR code. No signup, no cost. [Try it here.](/tools/)
 
 ---
 
-### What Every Technical Guidebook Needs:
+### When You're Ready for More
 
-#### 1. The One-Touch Wi-Fi Connect
-Stop typing passwords. Use a QR code generator or a direct "Join Network" link so guests are online in 2 seconds.
+Once you're managing more than one or two properties, a free generator starts to feel limiting. These platforms sync directly with your booking calendar and handle the heavy lifting for you:
 
-#### 2. Visual Hardware Manuals
-Instead of a 10-page PDF, use 15-second silent videos showing how to operate the Smart Lock or the Nespresso machine.
-> *Technical Tip: Store these on a private YouTube link or a CDN for instant loading.*
-
-#### 3. GPS-Linked Recommendations
-Don't just give an address. Provide an "Open in Google Maps" link for your favorite local coffee shop.
+* **Hostfully** — the industry standard for hosts scaling to several properties.
+* **TouchStay** — best if you want your guidebook to also tell a story about the local area.
+* **Hospitable Guide** — the simplest choice if you're already using their booking software.
 
 ---
 
-### Implementation Strategy
-If you are managing **5+ properties**, you shouldn't be updating these manually. Your guidebook should pull the "Guest Name" and "Check-in Date" dynamically from your PMS API.
+### What Every Good Guidebook Needs
 
-**Need a custom portal built for your portfolio?** [Let's talk Systems.](/contact/)
+#### 1. One-Touch WiFi
+Stop typing out passwords. A QR code or a direct "Join Network" link gets guests online in seconds.
+
+#### 2. Short Videos Instead of Manuals
+Instead of a long PDF, a 15-second silent video showing how the smart lock or the coffee machine works answers the question faster than any instructions can.
+
+#### 3. A Map Link, Not Just an Address
+Don't just name your favorite local coffee shop, link straight to it on Google Maps so guests can get walking directions in one tap.
+
+---
+
+### Managing Several Properties?
+
+If you're running five or more units, updating each guidebook by hand stops being realistic. Look for a system that automatically pulls each guest's name and check-in date from your booking software, so nothing has to be updated manually.
+
+**Need help setting one up for your whole portfolio?** [Let's talk.](/contact/)
